@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services | KGL Management, Business & Consulting</title>
+    <link rel="canonical" href="https://kglgroup.netlify.app/services.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- SEO -->
+    <meta name="description" content="Découvrez nos services : Management, Gouvernance & Performance, Finance, Audit, Risques & Conformité, Développement des Entreprises et Renforcement des Capacités.">
+    <meta name="keywords" content="management consulting, business consulting, finance, audit, conformité, formation, RDC, Kinshasa, KGL Management">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nos Services | KGL Management, Business & Consulting">
+    <meta property="og:description" content="Piloter la performance. Garantir la conformité. Créer une croissance durable. Découvrez nos pôles d'expertise en management et gouvernance.">
+    <meta property="og:image" content="https://kglgroup.netlify.app/images/logo-kgl.jpg">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fonts : Cooper Hewitt (auto-hebergee) -->
+    <link rel="preload" href="fonts/CooperHewitt-Book.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="fonts/CooperHewitt-Semibold.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="fonts/CooperHewitt-Bold.otf" as="font" type="font/otf" crossorigin>
+<!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="theme-color" content="#17418A">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Filet de securite : sans JS, #preloader (position:fixed, inset:0) masque
+         tout le site et les elements [data-animate] restent en opacity:0.
+         On retire les deux blocages pour que la page reste lisible. -->
+    <noscript>
+        <style>
+            #preloader { display: none !important; }
+            [data-animate] { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+            #cursor, #cursor-follower, #scroll-progress { display: none !important; }
+            #page-transition-overlay, .ambient-glow-top, .ambient-glow-bottom { display: none !important; }
+        </style>
+    </noscript>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kglgroup.netlify.app/services.html">
+    <meta property="og:title" content="Nos Services | KGL Management, Business & Consulting">
+    <meta property="og:description" content="Découvrez nos services : Management, Gouvernance & Performance, Finance, Audit, Risques & Conformité, Développement des Entreprises et Renforcement des Capacités.">
+    <meta property="og:image" content="https://kglgroup.netlify.app/images/logo-kgl.jpg">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://kglgroup.netlify.app/services.html">
+    <meta name="twitter:title" content="Nos Services | KGL Management, Business & Consulting">
+    <meta name="twitter:description" content="Découvrez nos services : Management, Gouvernance & Performance, Finance, Audit, Risques & Conformité, Développement des Entreprises et Renforcement des Capacités.">
+    <meta name="twitter:image" content="https://kglgroup.netlify.app/images/logo-kgl.jpg">
+
+    <!-- JSON-LD Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "KGL Management, Business & Consulting",
+      "url": "https://kglgroup.netlify.app",
+      "logo": "https://kglgroup.netlify.app/images/logo-kgl.jpg",
+      "description": "Découvrez nos services : Management, Gouvernance & Performance, Finance, Audit, Risques & Conformité, Développement des Entreprises et Renforcement des Capacités."
+    }
+    </script>
+</head>
+<body>
+    <noscript>
+        <div class="nojs-banner">
+            <p><strong>JavaScript est desactive.</strong> La page reste consultable, mais certains elements interactifs ne repondent pas.</p>
+            <a href="https://wa.me/243812430023" class="nojs-banner-cta" rel="noopener">Nous ecrire sur WhatsApp</a>
+        </div>
+    </noscript>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="images/logo-kgl.jpg" alt="KGL Management" decoding="async" width="236" height="126" loading="eager">
+            </div>
+            <div class="preloader-text" data-i18n="ui.loading">Chargement...</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Back to Top -->
+    <a href="#" id="back-to-top" aria-label="Retour en haut" data-i18n-aria="ui.backTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/243812430023" class="whatsapp-float" target="_blank" aria-label="Contactez-nous sur WhatsApp" data-i18n-aria="ui.whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip" data-i18n="ui.whatsappTip">Discutons sur WhatsApp</span>
+    </a>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-kgl.jpg" alt="KGL Management Logo" decoding="async" width="236" height="126" loading="eager">
+            </a>
+            <div class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Menu principal" data-i18n-aria="ui.menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html"><span data-i18n="nav.home">Accueil</span></a></li>
+                    <li>
+                        <a href="services.html" class="active"><span data-i18n="nav.expertise">Expertise</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html"><span data-i18n="nav.services">Nos Services</span></a></li>
+                            <li><a href="secteurs.html"><span data-i18n="nav.sectors">Secteurs d'Intervention</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blog.html"><span data-i18n="nav.insights">Insights</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html"><span data-i18n="nav.blog">Blog & Actualités</span></a></li>
+                            <li><a href="etudes-de-cas.html"><span data-i18n="nav.cases">Études de Cas</span></a></li>
+                            <li><a href="ressources.html"><span data-i18n="nav.resources">Ressources & Guides</span></a></li>
+                            <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
+                        <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="formations.html"><span data-i18n="nav.training">Formations</span></a></li>
+                    <li>
+                        <a href="apropos.html"><span data-i18n="nav.company">Société</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="apropos.html"><span data-i18n="nav.about">À Propos de KGL</span></a></li>
+                            <li><a href="ceo.html"><span data-i18n="nav.ceo">Le CEO</span></a></li>
+                            <li><a href="partenaires.html"><span data-i18n="nav.partners">Partenaires</span></a></li>
+                            <li><a href="carrieres.html"><span data-i18n="nav.careers">Carrières</span></a></li>
+                            <li><a href="galerie.html"><span data-i18n="nav.gallery">Galerie</span></a></li>
+                        <li><a href="conformite.html"><span data-i18n="nav.compliance">Conformité</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html"><span data-i18n="nav.contact">Contact</span></a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="connexion.html" class="btn btn-outline-dark btn-sm client-login" style="padding: 8px 16px; font-size: 11px;">
+                    <i class="fas fa-user-circle"></i>
+                    <span data-i18n="nav.client">Espace Client</span>
+                </a>
+                <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Basculer le mode sombre" data-i18n-aria="ui.darkMode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <!-- Page Header -->
+    <section class="page-header executive-header">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80');">
+            <div class="hero-overlay-refined"></div>
+        </div>
+        <div class="container text-center relative z-10">
+            <span class="premium-label" data-animate="fade-up" data-i18n="services.label">Haute Expertise</span>
+            <h1 data-animate="clip-reveal" data-i18n="services.title">Pôles d'Excellence</h1>
+            <p data-animate="fade-up" data-delay="2" data-i18n="services.subtitle">Solutions stratégiques adaptées aux défis de gouvernance moderne</p>
+            <div class="breadcrumb">
+                <a href="index.html" data-i18n="ui.breadcrumb.home">Accueil</a>
+                <span>/</span>
+                <span data-i18n="services.breadcrumb">Services</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title" data-animate="fade-up">
+                <span class="section-label" data-i18n="services.section.label">Notre Expertise</span>
+                <h2 data-i18n="services.section.title">7 domaines de compétence</h2>
+                <p data-i18n="services.section.desc">De la stratégie à la conformité, nous couvrons l'ensemble des besoins de votre organisation</p>
+            </div>
+            <div class="fiche-filter-bar" id="ficheFilterBar">
+                <p data-i18n="ui.onlyFiche">Une seule fiche est affichée.</p>
+                <button type="button" class="btn btn-outline" id="showAllFiches">
+                    <span data-i18n="ui.showAllFiches">Voir toutes les fiches</span>
+                    <i class="fas fa-th"></i>
+                </button>
+            </div>
+            <div class="services-grid-large" id="servicesGrid">
+                <!-- A. Management -->
+                <div class="service-card-large" id="management" data-animate="fade-up" style="padding: 0; overflow: hidden;">
+                    <picture>
+                        <source type="image/webp" srcset="images/diagnostic-institutionnel-640.webp 640w, images/diagnostic-institutionnel.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                        <img src="images/diagnostic-institutionnel.jpg" alt="1. Diagnostic Institutionnel" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/diagnostic-institutionnel-640.webp 640w, images/diagnostic-institutionnel.jpg 1024w" style="width: 100%; height: auto; display: block; border-radius: var(--radius-xl);">
+                    </picture>
+                                        
+                </div>
+
+                <!-- B. Gouvernance & Performance MPMEs -->
+                <div class="service-card-large" id="gouvernance" data-animate="fade-up" data-delay="1" style="padding: 0; overflow: hidden;">
+                    <picture>
+                        <source type="image/webp" srcset="images/accompagnement-entreprises-640.webp 640w, images/accompagnement-entreprises.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                        <img src="images/accompagnement-entreprises.jpg" alt="2. Accompagnement des Entreprises" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/accompagnement-entreprises-640.webp 640w, images/accompagnement-entreprises.jpg 1024w" style="width: 100%; height: auto; display: block; border-radius: var(--radius-xl);">
+                    </picture>
+                                        
+                </div>
+
+                <!-- C. Finance pour les MPMEs -->
+                <div class="service-card-large" id="finance" data-animate="fade-up" data-delay="2" style="padding: 0; overflow: hidden;">
+                    <picture>
+                        <source type="image/webp" srcset="images/gestion-financiere-640.webp 640w, images/gestion-financiere.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                        <img src="images/gestion-financiere.jpg" alt="3. Gestion Financière" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/gestion-financiere-640.webp 640w, images/gestion-financiere.jpg 1024w" style="width: 100%; height: auto; display: block; border-radius: var(--radius-xl);">
+                    </picture>
+                                        
+                </div>
+
+                <!-- D. Audit Institutionnel -->
+                <div class="service-card-large" id="audit" data-animate="fade-up" data-delay="3" style="padding: 0; overflow: hidden;">
+                    <picture>
+                        <source type="image/webp" srcset="images/audit-controle-640.webp 640w, images/audit-controle.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                        <img src="images/audit-controle.jpg" alt="4. Audit et Contrôle" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/audit-controle-640.webp 640w, images/audit-controle.jpg 1024w" style="width: 100%; height: auto; display: block; border-radius: var(--radius-xl);">
+                    </picture>
+                                        
+                </div>
+
+                <!-- E. Gestion des Risques & Conformité -->
+                <div class="service-card-large" id="risques" data-animate="fade-up" data-delay="4" style="padding: 0; overflow: hidden;">
+                    <picture>
+                        <source type="image/webp" srcset="images/cartographie-risques-640.webp 640w, images/cartographie-risques.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                        <img src="images/cartographie-risques.jpg" alt="5. Cartographie des Risques" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/cartographie-risques-640.webp 640w, images/cartographie-risques.jpg 1024w" style="width: 100%; height: auto; display: block; border-radius: var(--radius-xl);">
+                    </picture>
+                                        
+                </div>
+
+                <!-- F. Développement des Entreprises -->
+                <div class="service-card-large" id="developpement" data-animate="fade-up" data-delay="5" style="padding: 0; overflow: hidden;">
+                    <picture>
+                        <source type="image/webp" srcset="images/creation-startup-640.webp 640w, images/creation-startup.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                        <img src="images/creation-startup.jpg" alt="6. Création de Start-up" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/creation-startup-640.webp 640w, images/creation-startup.jpg 1024w" style="width: 100%; height: auto; display: block; border-radius: var(--radius-xl);">
+                    </picture>
+                                        
+                </div>
+
+                <!-- G. Renforcement des Capacités -->
+                <div class="service-card-large" id="formation" data-animate="fade-up" data-delay="6" style="padding: 0; overflow: hidden;">
+                    <picture>
+                        <source type="image/webp" srcset="images/formation-gestion-640.webp 640w, images/formation-gestion.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                        <img src="images/formation-gestion.jpg" alt="7. Formation en Gestion" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/formation-gestion-640.webp 640w, images/formation-gestion.jpg 1024w" style="width: 100%; height: auto; display: block; border-radius: var(--radius-xl);">
+                    </picture>
+                                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title" data-animate="fade-up">
+                <span class="section-label" data-i18n="ui.faqLabel">Questions fréquentes</span>
+                <h2 data-i18n="nav.faq">FAQ</h2>
+            </div>
+            <div class="faq-grid" data-animate="fade-up">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq.q1">Comment obtenir une consultation ?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.a1">Vous pouvez nous contacter par téléphone au +243 812 430 023, via WhatsApp, ou en remplissant le formulaire de contact sur notre site. Notre équipe vous répondra sous 24h pour organiser une première consultation gratuite.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq.q2">Quels sont vos domaines d'intervention ?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.a2">Nous intervenons dans 7 domaines principaux : Management, Gouvernance & Performance MPMEs, Finance pour les MPMEs, Audit Institutionnel, Gestion des Risques & Conformité, Développement des Entreprises, et Renforcement des Capacités. Nous couvrons également 10 secteurs d'activité.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq.q3">Travaillez-vous à l'international ?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.a3">Oui, bien que notre siège soit à Kinshasa, nous intervenons en RDC et en Afrique Centrale. Notre équipe d'experts nationaux et internationaux nous permet d'accompagner des organisations dans plusieurs pays de la région.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq.q4">Organisez-vous des formations ?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.a4">Oui, nous proposons un catalogue complet de formations en gestion financière, leadership, gestion de projets, logiciels comptables, contrôle interne, entrepreneuriat et management. Les formations peuvent être dispensées sur site ou en ligne.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-gradient"></div>
+            <div class="cta-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-animate="fade-up">
+                <h2 data-i18n="footer.cta.title">Un projet en tête ?</h2>
+                <p data-i18n="footer.cta.desc">Discutons de vos besoins et trouvons ensemble la solution la plus adaptée.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large magnetic-btn">
+                        <span data-i18n="ui.requestQuote">Demander un devis gratuit</span>
+                        <i class="fas fa-calculator"></i>
+                    </a>
+                    <a href="https://wa.me/243812430023" class="btn btn-outline btn-large magnetic-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="index.cta.btn2">WhatsApp direct</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta-content">
+            <span data-i18n="ui.requestQuote">Demander un devis gratuit</span>
+            <a href="contact.html" class="sticky-cta-btn">
+                <i class="fas fa-paper-plane"></i>
+                <span data-i18n="nav.contact">Contact</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center mb-12">
+            <div class="footer-pre-content">
+                <h2 class="gradient-text" data-i18n="footer.cta.title">Prêt à transformer votre performance ?</h2>
+                <p data-i18n="footer.cta.desc">Rejoignez les leaders qui font confiance à KGL Management pour leur excellence stratégique.</p>
+                <div class="footer-newsletter-mini">
+                    <form class="newsletter-form" action="https://formspree.io/f/xjkyqazj" method="POST">
+                        <input type="email" name="email" placeholder="Votre e-mail" data-i18n-placeholder="footer.email" required aria-label="Adresse e-mail">
+                        <button type="submit" class="btn btn-primary btn-sm" data-i18n="ui.subscribe">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo-kgl.jpg" alt="KGL Management" decoding="async" width="236" height="126" loading="lazy">
+                    </a>
+                    <p class="footer-description" data-i18n="footer.desc">Cabinet National de conseil spécialisé en management, gouvernance et performance des organisations en RDC.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/243812430023" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-i18n="footer.expertise">Expertise</h4>
+                    <ul>
+                        <li><a href="services.html"><span data-i18n="footer.services">Services</span></a></li>
+                        <li><a href="secteurs.html"><span data-i18n="footer.sectors">Secteurs</span></a></li>
+                        <li><a href="formations.html"><span data-i18n="nav.training">Formations</span></a></li>
+                        <li><a href="etudes-de-cas.html"><span data-i18n="footer.cases">Études de Cas</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.resourcesTitle">Ressources</h4>
+                    <ul>
+                        <li><a href="blog.html"><span data-i18n="footer.news">Actualités</span></a></li>
+                        <li><a href="ressources.html"><span data-i18n="footer.library">Bibliothèque</span></a></li>
+                        <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
+                        <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
+                        <li><a href="galerie.html"><span data-i18n="nav.gallery">Galerie</span></a></li>
+                        <li><a href="conformite.html"><span data-i18n="nav.compliance">Conformité</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.company">Société</h4>
+                    <ul>
+                        <li><a href="apropos.html"><span data-i18n="footer.about">À Propos</span></a></li>
+                        <li><a href="ceo.html"><span data-i18n="nav.ceo">Le CEO</span></a></li>
+                        <li><a href="carrieres.html"><span data-i18n="nav.careers">Carrières</span></a></li>
+                        <li><a href="partenaires.html"><span data-i18n="nav.partners">Partenaires</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p data-i18n="footer.copyright">&copy; 2026 KGL MANAGEMENT, BUSINESS & CONSULTING. Tous droits réservés.</p>
+                </div>
+                <div class="footer-refs">
+                    <span><a href="mentions-legales.html#confidentialite" data-i18n="footer.privacy">Confidentialité</a></span>
+                    <span><a href="mentions-legales.html" data-i18n="footer.legal">Mentions Légales</a></span>
+                    <span><a href="mentions-legales.html#plan-du-site" data-i18n="footer.sitemap">Plan du site</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+        <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/premium-upgrades.js"></script>
+    <script src="js/ultra-premium.js"></script>
+</body>
+</html>

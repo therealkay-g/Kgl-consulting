@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos | KGL Management, Business & Consulting</title>
+    <link rel="canonical" href="https://kglgroup.netlify.app/apropos.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Découvrez KGL Management, Business & Consulting. Cabinet de conseil spécialisé en management, gouvernance, finance, audit et conformité en RDC.">
+    <meta name="keywords"
+        content="KGL Management, cabinet conseil, management, gouvernance, finance, audit, RDC, Kinshasa">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="À Propos | KGL Management, Business & Consulting">
+    <meta property="og:description"
+        content="Cabinet de conseil spécialisé en management, gouvernance, finance et conformité.">
+    <meta property="og:image" content="https://kglgroup.netlify.app/images/logo-kgl.jpg">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fonts : Cooper Hewitt (auto-hebergee) -->
+    <link rel="preload" href="fonts/CooperHewitt-Book.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="fonts/CooperHewitt-Semibold.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="fonts/CooperHewitt-Bold.otf" as="font" type="font/otf" crossorigin>
+<!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="theme-color" content="#17418A">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Filet de securite : sans JS, #preloader (position:fixed, inset:0) masque
+         tout le site et les elements [data-animate] restent en opacity:0.
+         On retire les deux blocages pour que la page reste lisible. -->
+    <noscript>
+        <style>
+            #preloader { display: none !important; }
+            [data-animate] { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+            #cursor, #cursor-follower, #scroll-progress { display: none !important; }
+            #page-transition-overlay, .ambient-glow-top, .ambient-glow-bottom { display: none !important; }
+        </style>
+    </noscript>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kglgroup.netlify.app/apropos.html">
+    <meta property="og:title" content="À Propos | KGL Management, Business & Consulting">
+    <meta property="og:description" content="À Propos | KGL Management, Business & Consulting">
+    <meta property="og:image" content="https://kglgroup.netlify.app/images/logo-kgl.jpg">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://kglgroup.netlify.app/apropos.html">
+    <meta name="twitter:title" content="À Propos | KGL Management, Business & Consulting">
+    <meta name="twitter:description" content="À Propos | KGL Management, Business & Consulting">
+    <meta name="twitter:image" content="https://kglgroup.netlify.app/images/logo-kgl.jpg">
+
+    <!-- JSON-LD Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "KGL Management, Business & Consulting",
+      "url": "https://kglgroup.netlify.app",
+      "logo": "https://kglgroup.netlify.app/images/logo-kgl.jpg",
+      "description": "À Propos | KGL Management, Business & Consulting"
+    }
+    </script>
+</head>
+
+<body>
+    <noscript>
+        <div class="nojs-banner">
+            <p><strong>JavaScript est desactive.</strong> La page reste consultable, mais certains elements interactifs ne repondent pas.</p>
+            <a href="https://wa.me/243812430023" class="nojs-banner-cta" rel="noopener">Nous ecrire sur WhatsApp</a>
+        </div>
+    </noscript>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="images/logo-kgl.jpg" alt="KGL Management" decoding="async" width="236" height="126" loading="eager">
+            </div>
+            <div class="preloader-text" data-i18n="ui.loading">Chargement...</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Back to Top -->
+    <a href="#" id="back-to-top" aria-label="Retour en haut" data-i18n-aria="ui.backTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/243812430023" class="whatsapp-float" target="_blank"
+        aria-label="Contactez-nous sur WhatsApp" data-i18n-aria="ui.whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip" data-i18n="ui.whatsappTip">Discutons sur WhatsApp</span>
+    </a>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-kgl.jpg" alt="KGL Management Logo" decoding="async" width="236" height="126" loading="eager">
+            </a>
+            <div class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Menu principal" data-i18n-aria="ui.menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html"><span data-i18n="nav.home">Accueil</span></a></li>
+                    <li>
+                        <a href="services.html"><span data-i18n="nav.expertise">Expertise</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html"><span data-i18n="nav.services">Nos Services</span></a></li>
+                            <li><a href="secteurs.html"><span data-i18n="nav.sectors">Secteurs d'Intervention</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blog.html"><span data-i18n="nav.insights">Insights</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html"><span data-i18n="nav.blog">Blog & Actualités</span></a></li>
+                            <li><a href="etudes-de-cas.html"><span data-i18n="nav.cases">Études de Cas</span></a></li>
+                            <li><a href="ressources.html"><span data-i18n="nav.resources">Ressources & Guides</span></a></li>
+                            <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
+                        <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="formations.html"><span data-i18n="nav.training">Formations</span></a></li>
+                    <li>
+                        <a href="apropos.html" class="active"><span data-i18n="nav.company">Société</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="apropos.html"><span data-i18n="nav.about">À Propos de KGL</span></a></li>
+                            <li><a href="ceo.html"><span data-i18n="nav.ceo">Le CEO</span></a></li>
+                            <li><a href="partenaires.html"><span data-i18n="nav.partners">Partenaires</span></a></li>
+                            <li><a href="carrieres.html"><span data-i18n="nav.careers">Carrières</span></a></li>
+                            <li><a href="galerie.html"><span data-i18n="nav.gallery">Galerie</span></a></li>
+                        <li><a href="conformite.html"><span data-i18n="nav.compliance">Conformité</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html"><span data-i18n="nav.contact">Contact</span></a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="connexion.html" class="btn btn-outline-dark btn-sm client-login"
+                    style="padding: 8px 16px; font-size: 11px;">
+                    <i class="fas fa-user-circle"></i>
+                    <span data-i18n="nav.client">Espace Client</span>
+                </a>
+                <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Basculer le mode sombre" data-i18n-aria="ui.darkMode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <!-- Page Header -->
+    <section class="page-header executive-header">
+        <div class="hero-bg"
+            style="background-image: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80');">
+            <div class="hero-overlay-refined"></div>
+        </div>
+        <div class="container text-center relative z-10">
+            <span class="premium-label" data-animate="fade-up" data-i18n="about.label">Institutionnel</span>
+            <h1 data-animate="clip-reveal" data-i18n="about.title">À Propos de KGL</h1>
+            <p data-animate="fade-up" data-delay="2" data-i18n="about.subtitle">Notre histoire, notre vision et nos valeurs fondamentales</p>
+            <div class="breadcrumb">
+                <a href="index.html" data-i18n="ui.breadcrumb.home">Accueil</a>
+                <span>/</span>
+                <span>À Propos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="about-grid-large">
+                <div class="about-content" data-animate="fade-right">
+                    <span class="section-label" data-i18n="about.story.label">Notre Histoire</span>
+                    <h2 data-i18n="about.story.title">KGL Management,<br>Business & Consulting</h2>
+                    <p class="lead" data-i18n="about.story.lead"><strong>KGL Management, Business & Consulting (KGL MBC)</strong> est un cabinet de
+                        conseil spécialisé en management, gouvernance, finance, audit, conformité et développement des
+                        entreprises.</p>
+                    <p data-i18n="about.story.p1">Nous accompagnons les institutions publiques, les organisations internationales, les ONG, les
+                        entreprises privées, les PMEs ainsi que les entrepreneurs dans l'amélioration de leur
+                        performance, la maîtrise des risques et la réalisation de leurs objectifs stratégiques.</p>
+                    <p data-i18n="about.story.p2">Grâce à une équipe d'experts multidisciplinaires et une approche orientée vers les résultats, KGL
+                        propose des solutions innovantes, adaptées aux réalités africaines et conformes aux meilleures
+                        pratiques internationales.</p>
+                    <p data-i18n="about.story.p3">Notre ambition est de devenir un partenaire de confiance pour toutes les organisations souhaitant
+                        renforcer leur gouvernance, optimiser leur gestion et assurer une croissance durable.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="index.about.f1">Experts nationaux et internationaux</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="index.about.f2">Interventions en RDC et en Afrique Centrale</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="index.about.f3">Solutions adaptées aux réalités africaines</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-large" data-animate="fade-left">
+                    <div class="about-image-frame">
+                        <picture>
+                            <source type="image/webp" srcset="images/centre-financier-640.webp 640w, images/centre-financier.webp 1024w" sizes="(max-width: 768px) 92vw, 520px">
+                            <img src="images/centre-financier.jpg" alt="KGL Management - Cabinet de conseil (Centre Financier de Kinshasa)" width="1024" height="681" loading="lazy" decoding="async" sizes="(max-width: 768px) 92vw, 520px" srcset="images/centre-financier-640.webp 640w, images/centre-financier.jpg 1024w">
+                        </picture>
+                                                
+                        <div class="about-image-badge">
+                            <div class="badge-number">5+</div>
+                            <div class="badge-text">Ans d'expérience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Vision Values -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-16">
+                <span class="section-label" data-i18n="about.dna.label">Notre ADN Institutionnel</span>
+                <h2 data-i18n="about.dna.title">Vision, Mission & Valeurs</h2>
+                <p data-i18n="about.dna.desc">Les piliers de notre engagement envers l'excellence et l'intégrité.</p>
+            </div>
+
+            <div class="executive-panels-grid">
+                <!-- Vision -->
+                <div class="executive-panel" data-animate="fade-up">
+                    <div class="panel-header">
+                        <i class="fas fa-eye"></i>
+                        <h3 data-i18n="about.vision.title">Notre Vision</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p data-i18n="about.vision.desc">Être le cabinet de référence en Afrique centrale, reconnu pour sa capacité à transformer la
+                            gouvernance des organisations par l'innovation stratégique et l'excellence opérationnelle.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mission -->
+                <div class="executive-panel" data-animate="fade-up" data-delay="1">
+                    <div class="panel-header">
+                        <i class="fas fa-bullseye"></i>
+                        <h3 data-i18n="about.mission.title">Notre Mission</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p data-i18n="about.mission.desc">Accompagner les décideurs publics et privés dans la fiabilisation de leur gestion fiduciaire,
+                            l'optimisation de leurs processus et la sécurisation de leur conformité internationale.</p>
+                    </div>
+                </div>
+
+                <!-- Valeurs -->
+                <div class="executive-panel" data-animate="fade-up" data-delay="2">
+                    <div class="panel-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3 data-i18n="about.values.title">Nos Valeurs</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="luxury-list-small">
+                            <li><i class="fas fa-check"></i> <strong data-i18n="about.values.v1.title">Intégrité</strong> : <span data-i18n="about.values.v1.desc">Nous agissons avec
+                                honnêteté,transparence, indépendance et éthique professionnelle.</span></li>
+                            <li><i class="fas fa-check"></i> <strong data-i18n="about.values.v2.title">Excellence</strong> : <span data-i18n="about.values.v2.desc">Nous recherchons en
+                                permanence la qualité, la rigueur et la satisfaction de nos clients.</span></li>
+                            <li><i class="fas fa-check"></i> <strong data-i18n="about.values.v3.title">Innovation</strong> : <span data-i18n="about.values.v3.desc">Nous développons des
+                                solutions modernes et adaptées aux défis d'un environnement en constante évolution.</span></li>
+                            <li><i class="fas fa-check"></i> <strong data-i18n="about.values.v4.title">Professionnalisme</strong> : <span data-i18n="about.values.v4.desc">Nous mettons à la
+                                disposition de nos clients des experts quiamifiés, engagés et orientés vers les
+                                résultats.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title" data-animate="fade-up">
+                <span class="section-label" data-i18n="about.team.label">Notre Équipe</span>
+                <h2 data-i18n="about.team.title">Une direction d'experts passionnés</h2>
+            </div>
+            <div class="executive-leadership-panel" data-animate="fade-up">
+                <div class="leader-visual">
+                    <picture>
+                        <source type="image/webp" srcset="images/dr.webp 397w" sizes="(max-width: 768px) 92vw, 520px">
+                        <img src="images/dr.jpg" alt="Dr. John Kangolo Lunkamba" width="397" height="399" loading="lazy" decoding="async" sizes="(max-width: 768px) 92vw, 520px" srcset="images/dr.jpg 397w">
+                    </picture>
+                                        
+                    <div class="experience-year" data-i18n="about.team.exp">20+ Ans d'Expertise</div>
+                </div>
+                <div class="leader-details">
+                    <span class="leadership-label" data-i18n="about.team.role">Managing Partner</span>
+                    <h3 data-i18n="about.team.name">Dr. John Kangolo Lunkamba</h3>
+                    <p class="institution-meta" data-i18n="about.team.degree">Docteur en Administration des Affaires — Suisse</p>
+                    <p class="leader-bio-refined" data-i18n="about.team.bio">Expert international de premier plan, le Dr. Kangolo dirige KGL
+                        Management avec une vision axée sur la transparence institutionnelle et la performance durable
+                        en Afrique Centrale.</p>
+                    <div class="leader-actions-premium">
+                        <a href="ceo.html" class="luxury-btn-outline">
+                            <span data-i18n="ui.viewProfile">Consulter le profil complet</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section section-padding bg-light">
+        <div class="container">
+            <div class="section-title" data-animate="fade-up">
+                <span class="section-label" data-i18n="index.partners.label">Ils nous font confiance</span>
+                <h2 data-i18n="index.partners.title">Nos partenaires stratégiques</h2>
+            </div>
+            <div class="partners-marquee" data-animate="fade-up">
+                <div class="partners-track">
+                    <div class="partner-logo">
+                        <img src="images/partenaire-anadec.png" alt="ANADEC" loading="lazy" decoding="async" width="224" height="224">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partenaire-hec-kin.png" alt="HEC-KIN" loading="lazy" decoding="async" width="225" height="225">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partenaire-humanitas.png" alt="HUMANITAS" loading="lazy" decoding="async" width="175" height="132">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partenaire-anadec.png" alt="ANADEC" loading="lazy" decoding="async" width="224" height="224">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partenaire-hec-kin.png" alt="HEC-KIN" loading="lazy" decoding="async" width="225" height="225">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partenaire-humanitas.png" alt="HUMANITAS" loading="lazy" decoding="async" width="175" height="132">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-gradient"></div>
+            <div class="cta-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-animate="fade-up">
+                <h2 data-i18n="about.cta.title">Envie de collaborer avec nous ?</h2>
+                <p data-i18n="about.cta.desc">Que vous soyez une institution publique, une entreprise privée ou un entrepreneur, nous avons les
+                    solutions adaptées à vos besoins.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large magnetic-btn">
+                        <span data-i18n="index.cta.btn1">Prendre rendez-vous</span>
+                        <i class="fas fa-calendar-check"></i>
+                    </a>
+                    <a href="services.html" class="btn btn-outline btn-large magnetic-btn" aria-expanded="false" aria-controls="cta-services">
+                        <span class="disclosure-open-label" data-i18n="about.cta.btn2">Découvrir nos services</span>
+                        <span class="disclosure-close-label" data-i18n="ui.learnLess">Réduire</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="disclosure-panel disclosure-panel--dark" id="cta-services">
+                    <p class="disclosure-label" data-i18n="ui.pickFiche">Choisissez la fiche à consulter</p>
+                    <ul class="disclosure-list disclosure-list--links">
+                        <li><a href="services.html#management" data-i18n="index.svc.management">Management</a></li>
+                        <li><a href="services.html#gouvernance" data-i18n="index.svc.governance">Gouvernance &amp; Performance MPMEs</a></li>
+                        <li><a href="services.html#finance" data-i18n="index.svc.finance">Finance pour les MPMEs</a></li>
+                        <li><a href="services.html#audit" data-i18n="index.svc.audit">Audit Institutionnel</a></li>
+                        <li><a href="services.html#risques" data-i18n="index.svc.risk">Gestion des Risques &amp; Conformité</a></li>
+                        <li><a href="services.html#developpement" data-i18n="index.svc.dev">Développement des Entreprises</a></li>
+                        <li><a href="services.html#formation" data-i18n="index.svc.training">Renforcement des Capacités</a></li>
+                    </ul>
+                    <a href="services.html" class="disclosure-sheet">
+                        <span data-i18n="ui.fullPage">Voir la page complète</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta-content">
+            <span data-i18n="sticky.text">Discutons de votre projet</span>
+            <a href="https://wa.me/243812430023" class="sticky-cta-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span data-i18n="ui.contact">Contacter</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo-kgl.jpg" alt="KGL Management" decoding="async" width="236" height="126" loading="lazy">
+                    </a>
+                    <p class="footer-description" data-i18n="footer.desc">Cabinet National de conseil spécialisé en management, gouvernance,
+                        finance, audit, conformité et développement des entreprises.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.company">Société</h4>
+                    <ul>
+                        <li><a href="index.html"><span data-i18n="nav.home">Accueil</span></a></li>
+                        <li><a href="apropos.html"><span data-i18n="footer.about">À Propos</span></a></li>
+                        <li><a href="ceo.html"><span data-i18n="nav.ceo">Le CEO</span></a></li>
+                        <li><a href="services.html"><span data-i18n="footer.services">Services</span></a></li>
+                        <li><a href="projets.html"><span data-i18n="footer.cases">Réalisations</span></a></li>
+                        <li><a href="conformite.html"><span data-i18n="footer.legal">Conformité</span></a></li>
+                        <li><a href="contact.html"><span data-i18n="nav.contact">Contact</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.expertise">Nos services</h4>
+                    <ul>
+                        <li><a href="services.html#management"><span data-i18n="index.svc.management">Management Consulting</span></a></li>
+                        <li><a href="services.html#business"><span data-i18n="index.svc.dev">Business Consulting</span></a></li>
+                        <li><a href="services.html#finance"><span data-i18n="index.svc.finance">Finance & Accounting</span></a></li>
+                        <li><a href="services.html#audit"><span data-i18n="index.svc.audit">Audit & Assurance</span></a></li>
+                        <li><a href="services.html#risques"><span data-i18n="index.svc.risk">Risk & Compliance</span></a></li>
+                        <li><a href="services.html#formation"><span data-i18n="index.svc.training">Formation</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="ui.contact">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+243812430023">+243 812 430 023</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/243812430023" target="_blank">+243 812 430 023</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-i18n="index.location">Boulevard du Palais de la Nation<br>Gombe, Kinshasa, RDC</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p data-i18n="footer.copyright">&copy; 2026 KGL MANAGEMENT, BUSINESS & CONSULTING. Tous droits réservés.</p>
+                </div>
+                <div class="footer-refs">
+                    <span><a href="mentions-legales.html#confidentialite" data-i18n="footer.privacy">Politique de confidentialité</a></span>
+                    <span><a href="mentions-legales.html" data-i18n="footer.legal">Conditions d'utilisation</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+        <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/premium-upgrades.js"></script>
+    <script src="js/ultra-premium.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>KGL Management, Business & Consulting — Cabinet de Conseil en RDC & | KGL Management</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="KGL Management, Business & Consulting : cabinet de conseil en management, gouvernance, finance, audit et conformité en RDC & Afrique Centrale. Piloter la performance, garantir la conformité, créer une croissance durable.">
+    <link rel="canonical" href="https://kglgroup.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kglgroup.netlify.app">
+    <meta property="og:title" content="KGL Management, Business & Consulting">
+    <meta property="og:description"
+        content="Piloter la performance. Garantir la conformité. Créer une croissance durable. Cabinet de conseil leader en management et gouvernance en RDC.">
+    <meta property="og:image" content="https://kglgroup.netlify.app/images/logo-kgl.jpg">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KGL Management, Business & Consulting">
+    <meta name="twitter:description"
+        content="Piloter la performance. Garantir la conformité. Créer une croissance durable.">
+    <meta name="twitter:image" content="https://kglgroup.netlify.app/images/logo-kgl.jpg">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "KGL Management, Business & Consulting",
+      "url": "https://kglgroup.netlify.app",
+      "logo": "https://kglgroup.netlify.app/images/logo-kgl.jpg",
+      "description": "KGL Management, Business & Consulting : Piloter la performance, Garantir la conformité, Créer une croissance durable. Cabinet de conseil leader en RDC.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Boulevard du Palais de la Nation, Gombe",
+        "addressLocality": "Kinshasa",
+        "addressCountry": "CD"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+243812430023",
+        "contactType": "customer service"
+      },
+      "sameAs": [
+        "https://wa.me/243812430023"
+      ]
+    }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fonts : Cooper Hewitt (auto-hebergee) -->
+    <link rel="preload" href="fonts/CooperHewitt-Book.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="fonts/CooperHewitt-Semibold.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="fonts/CooperHewitt-Bold.otf" as="font" type="font/otf" crossorigin>
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="theme-color" content="#17418A">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Filet de securite : sans JS, #preloader (position:fixed, inset:0) masque
+         tout le site et les elements [data-animate] restent en opacity:0.
+         On retire les deux blocages pour que la page reste lisible. -->
+    <noscript>
+        <style>
+            #preloader { display: none !important; }
+            [data-animate] { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+            #cursor, #cursor-follower, #scroll-progress { display: none !important; }
+            #page-transition-overlay, .ambient-glow-top, .ambient-glow-bottom { display: none !important; }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    <noscript>
+        <div class="nojs-banner">
+            <p><strong>JavaScript est desactive.</strong> La page reste consultable, mais certains elements interactifs ne repondent pas.</p>
+            <a href="https://wa.me/243812430023" class="nojs-banner-cta" rel="noopener">Nous ecrire sur WhatsApp</a>
+        </div>
+    </noscript>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="images/logo-kgl.jpg" alt="KGL Management" decoding="async" width="236" height="126" loading="eager">
+            </div>
+            <div class="preloader-text" data-i18n="ui.loading">Chargement...</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Back to Top -->
+    <a href="#" id="back-to-top" aria-label="Retour en haut" data-i18n-aria="ui.backTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/243812430023" class="whatsapp-float" target="_blank"
+        aria-label="Contactez-nous sur WhatsApp" data-i18n-aria="ui.whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip" data-i18n="ui.whatsappTip">Discutons sur WhatsApp</span>
+    </a>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-kgl.jpg" alt="KGL Management Logo" decoding="async" width="236" height="126" loading="eager">
+            </a>
+            <div class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Menu principal" data-i18n-aria="ui.menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active"><span data-i18n="nav.home">Accueil</span></a></li>
+                    <li>
+                        <a href="services.html"><span data-i18n="nav.expertise">Expertise</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html"><span data-i18n="nav.services">Nos Services</span></a></li>
+                            <li><a href="secteurs.html"><span data-i18n="nav.sectors">Secteurs d'Intervention</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blog.html"><span data-i18n="nav.insights">Insights</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html"><span data-i18n="nav.blog">Blog & Actualités</span></a></li>
+                            <li><a href="etudes-de-cas.html"><span data-i18n="nav.cases">Études de Cas</span></a></li>
+                            <li><a href="ressources.html"><span data-i18n="nav.resources">Ressources & Guides</span></a></li>
+                            <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
+                        <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="formations.html"><span data-i18n="nav.training">Formations</span></a></li>
+                    <li>
+                        <a href="apropos.html"><span data-i18n="nav.company">Société</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="apropos.html"><span data-i18n="nav.about">À Propos de KGL</span></a></li>
+                            <li><a href="ceo.html"><span data-i18n="nav.ceo">Le CEO</span></a></li>
+                            <li><a href="partenaires.html"><span data-i18n="nav.partners">Partenaires</span></a></li>
+                            <li><a href="carrieres.html"><span data-i18n="nav.careers">Carrières</span></a></li>
+                            <li><a href="galerie.html"><span data-i18n="nav.gallery">Galerie</span></a></li>
+                        <li><a href="conformite.html"><span data-i18n="nav.compliance">Conformité</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html"><span data-i18n="nav.contact">Contact</span></a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="connexion.html" class="btn btn-outline-dark btn-sm client-login"
+                    style="padding: 8px 16px; font-size: 11px;">
+                    <i class="fas fa-user-circle"></i>
+                    <span data-i18n="nav.client">Espace Client</span>
+                </a>
+                <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Basculer le mode sombre" data-i18n-aria="ui.darkMode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline poster="images/centre-financier.jpg" id="heroVideo">
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-city-skyscrapers-in-business-district-4823-large.mp4"
+                    type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-top-meta" data-animate="fade-up">
+                <div class="hero-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span data-i18n="index.location">RDC & Afrique Centrale</span>
+                </div>
+            </div>
+
+            <h1 data-animate="clip-reveal"
+                style="font-size: clamp(1.9rem, 4.2vw, 3.3rem); line-height: 1.15; text-transform: uppercase;">
+                <span class="gradient-text" style="display: block;" data-i18n="index.hero.line1">PILOTER LA PERFORMANCE.</span>
+                <span class="gradient-text" style="display: block;" data-i18n="index.hero.line2">GARANTIR LA CONFORMITÉ.</span>
+                <span class="gradient-text" style="display: block;" data-i18n="index.hero.line3">CRÉER UNE CROISSANCE DURABLE.</span>
+            </h1>
+
+            <p data-animate="fade-up" data-delay="2" class="hero-lead" data-i18n="index.hero.lead">
+                Cabinet de conseil spécialisé en management, gouvernance et performance MPMEs. Nous transformons les
+                défis complexes en opportunités de croissance durable pour les gouvernements, ONG et grandes
+                entreprises.
+            </p>
+
+            <div class="hero-features" data-animate="fade-up" data-delay="3">
+                <div class="hero-feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="index.hero.feat1">5+ ans d'expérience</span>
+                </div>
+                <div class="hero-feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="index.hero.feat2">Experts internationaux</span>
+                </div>
+                <div class="hero-feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span data-i18n="index.hero.feat3">Impact mesurable</span>
+                </div>
+            </div>
+
+            <div class="hero-buttons" data-animate="fade-up" data-delay="4">
+                <a href="contact.html" class="btn btn-primary btn-large magnetic-btn shimmer">
+                    <span data-i18n="index.hero.cta1">Demander une consultation</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="services.html" class="btn btn-outline btn-large magnetic-btn">
+                    <span data-i18n="index.hero.cta2">Nos services</span>
+                </a>
+            </div>
+
+            <div class="hero-stats-mini" data-animate="fade-up" data-delay="5">
+                <div class="h-stat">
+                    <span class="h-stat-num counter" data-target="100">0</span><span class="h-stat-suffix">+</span>
+                    <span class="h-stat-label" data-i18n="index.hero.stat1">Organisations accompagnées</span>
+                </div>
+                <div class="h-stat-divider"></div>
+                <div class="h-stat">
+                    <span class="h-stat-num counter" data-target="5">0</span><span class="h-stat-suffix">+</span>
+                    <span class="h-stat-label" data-i18n="index.hero.stat2">Ans d'Expertise</span>
+                </div>
+            </div>
+
+            <div class="hero-scroll-indicator" data-animate="fade-up" data-delay="6">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span data-i18n="index.hero.scroll">Explorer l'Excellence</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stats Section -->
+    <section class="impact-stats section-padding">
+        <div class="container">
+            <div class="stats-grid-large">
+                <div class="stat-item-large" data-animate="fade-up">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label" data-i18n="index.stats.exp">Ans d'expérience</div>
+                    <div class="stat-sublabel" data-i18n="index.stats.expSub">Dans le conseil et l'accompagnement</div>
+                </div>
+                <div class="stat-item-large" data-animate="fade-up" data-delay="1">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label" data-i18n="index.stats.orgs">Organisations accompagnées</div>
+                    <div class="stat-sublabel" data-i18n="index.stats.orgsSub">Institutions publiques, privées et ONG</div>
+                </div>
+                <div class="stat-item-large" data-animate="fade-up" data-delay="2">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label" data-i18n="index.stats.sectors">Secteurs couverts</div>
+                    <div class="stat-sublabel" data-i18n="index.stats.sectorsSub">Public, privé et ONG</div>
+                </div>
+                <div class="stat-item-large" data-animate="fade-up" data-delay="3">
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label" data-i18n="index.stats.ceo">Ans d'expertise du CEO</div>
+                    <div class="stat-sublabel">Dr. John Kangolo Lunkamba</div>
+                </div>
+            </div>
+
+            <div class="section-title text-center" data-animate="fade-up">
+                <span class="section-label" data-i18n="index.why.label">L'Atout KGL</span>
+                <h2 data-i18n="index.why.title">Pourquoi choisir KGL Management ?</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-item" data-animate="fade-up">
+                    <i class="fas fa-check-circle"></i>
+                    <h3 data-i18n="index.why.1.title">Expérience Éprouvée</h3>
+                    <p data-i18n="index.why.1.desc">Plus de 5 ans d'expérience dans l'accompagnement de plusieurs organisations en RDC.</p>
+                </div>
+                <div class="why-item" data-animate="fade-up" data-delay="1">
+                    <i class="fas fa-globe-africa"></i>
+                    <h3 data-i18n="index.why.2.title">Couverture Régionale</h3>
+                    <p data-i18n="index.why.2.desc">Interventions stratégiques en République Démocratique du Congo et en Afrique Centrale.</p>
+                </div>
+                <div class="why-item" data-animate="fade-up" data-delay="2">
+                    <i class="fas fa-users-cog"></i>
+                    <h3 data-i18n="index.why.3.title">Experts de Haut Niveau</h3>
+                    <p data-i18n="index.why.3.desc">Une synergie d'experts nationaux et internationaux dédiés à votre croissance.</p>
+                </div>
+                <div class="why-item" data-animate="fade-up" data-delay="3">
+                    <i class="fas fa-building"></i>
+                    <h3 data-i18n="index.why.4.title">Multi-Secteurs</h3>
+                    <p data-i18n="index.why.4.desc">Expertise reconnue auprès du Secteur Public, du Secteur Privé et des ONG.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title" data-animate="fade-up">
+                <span class="section-label" data-i18n="index.services.label">Notre Expertise</span>
+                <h2 data-i18n="index.services.title">Nos domaines d'expertise</h2>
+                <p data-i18n="index.services.desc">Des solutions innovantes et adaptées aux réalités africaines pour transformer votre organisation</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card" data-animate="fade-up">
+                    <div class="service-card-image">
+                        <picture>
+                            <source type="image/webp" srcset="images/diagnostic-institutionnel-640.webp 640w, images/diagnostic-institutionnel.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                            <img src="images/diagnostic-institutionnel.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/diagnostic-institutionnel-640.webp 640w, images/diagnostic-institutionnel.jpg 1024w">
+                        </picture>
+                        
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-chess-king"></i>
+                        </div>
+                        <h3 data-i18n="index.svc.management">Management</h3>
+                        <p data-i18n="index.svc.management.desc">Diagnostic organisationnel, restructuration, business process reengineering, plan stratégique
+                            et organisation institutionnelle.</p>
+                        <a href="services.html#management" class="service-link magnetic-btn" aria-expanded="false" aria-controls="svc-detail-management">
+                            <span class="disclosure-open-label" data-i18n="ui.learnMore">En savoir plus</span>
+                            <span class="disclosure-close-label" data-i18n="ui.learnLess">Réduire</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="service-detail" id="svc-detail-management">
+                            <p class="service-detail-label" data-i18n="ui.detailLabel">Ce que nous couvrons</p>
+                            <ul class="service-detail-list">
+                                <li data-i18n="index.svc.management.more1">Diagnostic organisationnel complet et cartographie des processus existants</li>
+                                <li data-i18n="index.svc.management.more2">Restructuration, reengineering des processus et refonte de l'organigramme</li>
+                                <li data-i18n="index.svc.management.more3">Plan stratégique à 3-5 ans avec dispositif de suivi-évaluation</li>
+                            </ul>
+                            <a href="services.html#management" class="service-detail-sheet" data-fiche="management">
+                                <span data-i18n="ui.detailSheet">Voir la fiche complète</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card" data-animate="fade-up" data-delay="1">
+                    <div class="service-card-image">
+                        <picture>
+                            <source type="image/webp" srcset="images/accompagnement-entreprises-640.webp 640w, images/accompagnement-entreprises.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                            <img src="images/accompagnement-entreprises.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/accompagnement-entreprises-640.webp 640w, images/accompagnement-entreprises.jpg 1024w">
+                        </picture>
+                        
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 data-i18n="index.svc.governance">Gouvernance & Performance MPMEs</h3>
+                        <p data-i18n="index.svc.governance.desc">Accompagnement des micros, petites et moyennes entreprises dans l'amélioration de leur
+                            gouvernance et performance.</p>
+                        <a href="services.html#gouvernance" class="service-link magnetic-btn" aria-expanded="false" aria-controls="svc-detail-governance">
+                            <span class="disclosure-open-label" data-i18n="ui.learnMore">En savoir plus</span>
+                            <span class="disclosure-close-label" data-i18n="ui.learnLess">Réduire</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="service-detail" id="svc-detail-governance">
+                            <p class="service-detail-label" data-i18n="ui.detailLabel">Ce que nous couvrons</p>
+                            <ul class="service-detail-list">
+                                <li data-i18n="index.svc.governance.more1">Mise en place des instances de gouvernance et de leurs supports de décision</li>
+                                <li data-i18n="index.svc.governance.more2">Formalisation des procédures internes et des délégations de pouvoir</li>
+                                <li data-i18n="index.svc.governance.more3">Tableaux de bord de performance et indicateurs de pilotage</li>
+                            </ul>
+                            <a href="services.html#gouvernance" class="service-detail-sheet" data-fiche="governance">
+                                <span data-i18n="ui.detailSheet">Voir la fiche complète</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card" data-animate="fade-up" data-delay="2">
+                    <div class="service-card-image">
+                        <picture>
+                            <source type="image/webp" srcset="images/gestion-financiere-640.webp 640w, images/gestion-financiere.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                            <img src="images/gestion-financiere.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/gestion-financiere-640.webp 640w, images/gestion-financiere.jpg 1024w">
+                        </picture>
+                        
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3 data-i18n="index.svc.finance">Finance pour les MPMEs</h3>
+                        <p data-i18n="index.svc.finance.desc">Gestion financière, comptabilité, contrôle budgétaire, analyse financière et cash management.
+                        </p>
+                        <a href="services.html#finance" class="service-link magnetic-btn" aria-expanded="false" aria-controls="svc-detail-finance">
+                            <span class="disclosure-open-label" data-i18n="ui.learnMore">En savoir plus</span>
+                            <span class="disclosure-close-label" data-i18n="ui.learnLess">Réduire</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="service-detail" id="svc-detail-finance">
+                            <p class="service-detail-label" data-i18n="ui.detailLabel">Ce que nous couvrons</p>
+                            <ul class="service-detail-list">
+                                <li data-i18n="index.svc.finance.more1">Organisation du service financier et mise en place du plan comptable</li>
+                                <li data-i18n="index.svc.finance.more2">Prévisions, contrôle budgétaire et reporting de gestion mensuel</li>
+                                <li data-i18n="index.svc.finance.more3">Analyse de rentabilité, trésorerie et optimisation du cash management</li>
+                            </ul>
+                            <a href="services.html#finance" class="service-detail-sheet" data-fiche="finance">
+                                <span data-i18n="ui.detailSheet">Voir la fiche complète</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card" data-animate="fade-up" data-delay="3">
+                    <div class="service-card-image">
+                        <picture>
+                            <source type="image/webp" srcset="images/audit-controle-640.webp 640w, images/audit-controle.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                            <img src="images/audit-controle.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/audit-controle-640.webp 640w, images/audit-controle.jpg 1024w">
+                        </picture>
+                        
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-search-dollar"></i>
+                        </div>
+                        <h3 data-i18n="index.svc.audit">Audit Institutionnel</h3>
+                        <p data-i18n="index.svc.audit.desc">Audit et contrôle interne, audit opérationnel et diagnostic organisationnel pour garantir la
+                            conformité.</p>
+                        <a href="services.html#audit" class="service-link magnetic-btn" aria-expanded="false" aria-controls="svc-detail-audit">
+                            <span class="disclosure-open-label" data-i18n="ui.learnMore">En savoir plus</span>
+                            <span class="disclosure-close-label" data-i18n="ui.learnLess">Réduire</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="service-detail" id="svc-detail-audit">
+                            <p class="service-detail-label" data-i18n="ui.detailLabel">Ce que nous couvrons</p>
+                            <ul class="service-detail-list">
+                                <li data-i18n="index.svc.audit.more1">Audits d'engagement, de conformité et audit opérationnel</li>
+                                <li data-i18n="index.svc.audit.more2">Évaluation du dispositif de contrôle interne et des procédures</li>
+                                <li data-i18n="index.svc.audit.more3">Rapport d'observations et plan d'action correctif priorisé</li>
+                            </ul>
+                            <a href="services.html#audit" class="service-detail-sheet" data-fiche="audit">
+                                <span data-i18n="ui.detailSheet">Voir la fiche complète</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card" data-animate="fade-up" data-delay="4">
+                    <div class="service-card-image">
+                        <picture>
+                            <source type="image/webp" srcset="images/cartographie-risques-640.webp 640w, images/cartographie-risques.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                            <img src="images/cartographie-risques.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/cartographie-risques-640.webp 640w, images/cartographie-risques.jpg 1024w">
+                        </picture>
+                        
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 data-i18n="index.svc.risk">Gestion des Risques & Conformité</h3>
+                        <p data-i18n="index.svc.risk.desc">Cartographie des risques, contrôle interne, compliance, anti-fraude, due diligence et
+                            investigations.</p>
+                        <a href="services.html#risques" class="service-link magnetic-btn" aria-expanded="false" aria-controls="svc-detail-risks">
+                            <span class="disclosure-open-label" data-i18n="ui.learnMore">En savoir plus</span>
+                            <span class="disclosure-close-label" data-i18n="ui.learnLess">Réduire</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="service-detail" id="svc-detail-risks">
+                            <p class="service-detail-label" data-i18n="ui.detailLabel">Ce que nous couvrons</p>
+                            <ul class="service-detail-list">
+                                <li data-i18n="index.svc.risk.more1">Cartographie des risques et évaluation probabilité / impact</li>
+                                <li data-i18n="index.svc.risk.more2">Dispositif anti-fraude, devoir de vigilance et gestion des litiges</li>
+                                <li data-i18n="index.svc.risk.more3">Conformité réglementaire, due diligence et investigations internes</li>
+                            </ul>
+                            <a href="services.html#risques" class="service-detail-sheet" data-fiche="risks">
+                                <span data-i18n="ui.detailSheet">Voir la fiche complète</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card" data-animate="fade-up" data-delay="5">
+                    <div class="service-card-image">
+                        <picture>
+                            <source type="image/webp" srcset="images/creation-startup-640.webp 640w, images/creation-startup.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                            <img src="images/creation-startup.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/creation-startup-640.webp 640w, images/creation-startup.jpg 1024w">
+                        </picture>
+                        
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 data-i18n="index.svc.dev">Développement des Entreprises</h3>
+                        <p data-i18n="index.svc.dev.desc">Création d'entreprise, business plan, étude de faisabilité, étude de marché, accompagnement
+                            des PME et levée de fonds.</p>
+                        <a href="services.html#developpement" class="service-link magnetic-btn" aria-expanded="false" aria-controls="svc-detail-development">
+                            <span class="disclosure-open-label" data-i18n="ui.learnMore">En savoir plus</span>
+                            <span class="disclosure-close-label" data-i18n="ui.learnLess">Réduire</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="service-detail" id="svc-detail-development">
+                            <p class="service-detail-label" data-i18n="ui.detailLabel">Ce que nous couvrons</p>
+                            <ul class="service-detail-list">
+                                <li data-i18n="index.svc.dev.more1">Étude de faisabilité, étude de marché et business plan</li>
+                                <li data-i18n="index.svc.dev.more2">Création, structuration et formalisation de l'entreprise</li>
+                                <li data-i18n="index.svc.dev.more3">Recherche de financement, business angels et levée de fonds</li>
+                            </ul>
+                            <a href="services.html#developpement" class="service-detail-sheet" data-fiche="development">
+                                <span data-i18n="ui.detailSheet">Voir la fiche complète</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 7 -->
+                <div class="service-card" data-animate="fade-up" data-delay="6">
+                    <div class="service-card-image">
+                        <picture>
+                            <source type="image/webp" srcset="images/formation-gestion-640.webp 640w, images/formation-gestion.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                            <img src="images/formation-gestion.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/formation-gestion-640.webp 640w, images/formation-gestion.jpg 1024w">
+                        </picture>
+                        
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 data-i18n="index.svc.training">Renforcement des Capacités</h3>
+                        <p data-i18n="index.svc.training.desc">Formations en gestion financière, leadership, gestion de projets, logiciels comptables,
+                            contrôle interne et entrepreneuriat.</p>
+                        <a href="services.html#formation" class="service-link magnetic-btn" aria-expanded="false" aria-controls="svc-detail-training">
+                            <span class="disclosure-open-label" data-i18n="ui.learnMore">En savoir plus</span>
+                            <span class="disclosure-close-label" data-i18n="ui.learnLess">Réduire</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="service-detail" id="svc-detail-training">
+                            <p class="service-detail-label" data-i18n="ui.detailLabel">Ce que nous couvrons</p>
+                            <ul class="service-detail-list">
+                                <li data-i18n="index.svc.training.more1">Gestion financière, comptabilité et logiciels de gestion</li>
+                                <li data-i18n="index.svc.training.more2">Leadership, gestion de projets et outils de pilotage</li>
+                                <li data-i18n="index.svc.training.more3">Contrôle interne, entrepreneuriat et gestion des équipes</li>
+                            </ul>
+                            <a href="services.html#formation" class="service-detail-sheet" data-fiche="training">
+                                <span data-i18n="ui.detailSheet">Voir la fiche complète</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image" data-animate="fade-right">
+                    <div class="about-image-frame">
+                        <picture>
+                            <source type="image/webp" srcset="images/centre-financier-640.webp 640w, images/centre-financier.webp 1024w" sizes="(max-width: 768px) 92vw, 480px">
+                            <img src="images/centre-financier.jpg" alt="Centre Financier de Kinshasa — KGL Management" width="1024" height="681" loading="lazy" decoding="async" sizes="(max-width: 768px) 92vw, 480px" srcset="images/centre-financier-640.webp 640w, images/centre-financier.jpg 1024w">
+                        </picture>
+                                                
+                        <div class="about-image-badge">
+                            <div class="badge-number">5+</div>
+                            <div class="badge-text" data-i18n="index.about.badge">Ans d'expérience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content" data-animate="fade-left">
+                    <span class="section-label" data-i18n="index.about.label">À propos de nous</span>
+                    <h2 data-i18n="index.about.title" data-i18n-html="true">Une vision, une mission,<br>un impact durable</h2>
+                    <p class="lead" data-i18n="index.about.lead" data-i18n-html="true"><strong>KGL Management, Business & Consulting (KGL MBC)</strong> est un cabinet de
+                        conseil spécialisé en management, gouvernance, finance, audit, conformité et développement des
+                        entreprises.</p>
+                    <p data-i18n="index.about.p1">Nous accompagnons les institutions publiques, les organisations internationales, les ONG, les
+                        entreprises privées, les PMEs ainsi que les entrepreneurs dans l'amélioration de leur
+                        performance, la maîtrise des risques et la réalisation de leurs objectifs stratégiques.</p>
+                    <p data-i18n="index.about.p2">Grâce à une équipe d'experts multidisciplinaires et une approche orientée vers les résultats, KGL
+                        propose des solutions innovantes, adaptées aux réalités africaines et conformes aux meilleures
+                        pratiques internationales.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="index.about.f1">Experts nationaux et internationaux</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="index.about.f2">Interventions en RDC et en Afrique Centrale</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="index.about.f3">Solutions adaptées aux réalités africaines</span>
+                        </div>
+                    </div>
+                    <a href="apropos.html" class="btn btn-primary magnetic-btn" aria-expanded="false" aria-controls="about-more">
+                        <span class="disclosure-open-label" data-i18n="index.about.cta">En savoir plus sur nous</span>
+                        <span class="disclosure-close-label" data-i18n="ui.learnLess">Réduire</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="disclosure-panel" id="about-more">
+                        <p class="disclosure-label" data-i18n="about.story.label">Notre Histoire</p>
+                        <p class="disclosure-text" data-i18n="about.story.p3">Notre ambition est de devenir un partenaire de confiance pour toutes les organisations souhaitant renforcer leur gouvernance, optimiser leur gestion et assurer une croissance durable.</p>
+                        <a href="apropos.html" class="disclosure-sheet">
+                            <span data-i18n="ui.fullPage">Voir la page complète</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectors Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title" data-animate="fade-up">
+                <span class="section-label" data-i18n="index.sectors.label">Nos secteurs d'activités</span>
+                <h2 data-i18n="index.sectors.title">Nos secteurs d'activités</h2>
+                <p data-i18n="index.sectors.desc">Une expertise transversale au service de multiples industries</p>
+            </div>
+            <div class="sectors-grid" data-animate="fade-up">
+    <div class="sector-group">
+        <h3 data-i18n="index.sectors.g1">Secteur Public et Développement</h3>
+        <div class="sector-items">
+            <div class="sector-card">
+                <div class="sector-icon"><i class="fas fa-landmark"></i></div>
+                <h4 data-i18n="index.sectors.state">Institution Étatique</h4>
+            </div>
+            <div class="sector-card">
+                <div class="sector-icon"><i class="fas fa-hands-helping"></i></div>
+                <h4 data-i18n="index.sectors.ngo">ONG</h4>
+            </div>
+            <div class="sector-card">
+                <div class="sector-icon"><i class="fas fa-heartbeat"></i></div>
+                <h4 data-i18n="index.sectors.health">Santé</h4>
+            </div>
+            <div class="sector-card">
+                <div class="sector-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h4 data-i18n="index.sectors.edu">Éducation</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sector-group">
+        <h3 data-i18n="index.sectors.g2">Entreprises et Entrepreneuriat</h3>
+        <div class="sector-items">
+            <div class="sector-card">
+                <div class="sector-icon"><i class="fas fa-store"></i></div>
+                <h4 data-i18n="index.sectors.sme">PME</h4>
+            </div>
+            <div class="sector-card">
+                <div class="sector-icon"><i class="fas fa-industry"></i></div>
+                <h4 data-i18n="index.sectors.industry">Industrie</h4>
+            </div>
+            <div class="sector-card">
+                <div class="sector-icon"><i class="fas fa-futbol"></i></div>
+                <h4 data-i18n="index.sectors.sport">Sport Business</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sector-group">
+        <h3 data-i18n="index.sectors.g3">Ressources Naturelles et Production</h3>
+        <div class="sector-items">
+            <div class="sector-card">
+                <div class="sector-icon"><i class="fas fa-seedling"></i></div>
+                <h4 data-i18n="index.sectors.agri">Agriculture</h4>
+            </div>
+            <div class="sector-card">
+                <div class="sector-icon"><i class="fas fa-gem"></i></div>
+                <h4 data-i18n="index.sectors.mines">Mines (coopératives)</h4>
+            </div>
+        </div>
+    </div>
+    <div class="sector-group">
+        <h3 data-i18n="index.sectors.g4">Investissement et Développement</h3>
+        <div class="sector-items">
+            <div class="sector-card">
+                <div class="sector-icon"><i class="fas fa-building"></i></div>
+                <h4 data-i18n="index.sectors.realestate">Immobilier</h4>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section section-padding">
+        <div class="container">
+            <div class="section-title" data-animate="fade-up">
+                <span class="section-label" data-i18n="index.partners.label">Ils nous font confiance</span>
+                <h2 data-i18n="index.partners.title">Nos partenaires stratégiques</h2>
+            </div>
+            <div class="partners-marquee" data-animate="fade-up">
+                <div class="partners-track">
+                    <div class="partner-logo">
+                        <img src="images/partenaire-anadec.png" alt="ANADEC" loading="lazy" decoding="async" width="224" height="224">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partenaire-hec-kin.png" alt="HEC-KIN" loading="lazy" decoding="async" width="225" height="225">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partenaire-humanitas.png" alt="HUMANITAS" loading="lazy" decoding="async" width="175" height="132">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partenaire-anadec.png" alt="ANADEC" loading="lazy" decoding="async" width="224" height="224">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partenaire-hec-kin.png" alt="HEC-KIN" loading="lazy" decoding="async" width="225" height="225">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partenaire-humanitas.png" alt="HUMANITAS" loading="lazy" decoding="async" width="175" height="132">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO Preview Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="about-grid-large">
+                <div class="about-content" data-animate="fade-right">
+                    <span class="section-label" data-i18n="index.ceo.label">Direction</span>
+                    <h2>Dr. John Kangolo Lunkamba</h2>
+                    <p class="leader-title" data-i18n="index.ceo.title">Mot du CEO</p>
+                    <div class="leader-speech" style="margin-bottom: var(--space-8);">
+                        <p data-i18n="index.ceo.p1"
+                            style="font-size: 1.05rem; line-height: 1.7; margin-bottom: var(--space-4); color: var(--text-muted);">
+                            Bienvenue chez KGL Management, Business & Consulting. Notre cabinet est né de la conviction
+                            qu'une gouvernance solide, une gestion performante et une conformité rigoureuse sont les
+                            fondements d'une croissance durable. Nous accompagnons les institutions publiques, les
+                            entreprises, les organisations de développement et les entrepreneurs en leur proposant des
+                            solutions adaptées en management, finance, audit, gestion des risques, conformité et
+                            renforcement des capacités.</p>
+                        <p data-i18n="index.ceo.p2"
+                            style="font-size: 1.05rem; line-height: 1.7; margin-bottom: var(--space-6); color: var(--text-muted);">
+                            Nous mettons l'expertise, l'intégrité et l'innovation au service de nos clients afin de
+                            créer une valeur durable et un impact concret. Avec notre équipe, nous sommes déterminés à
+                            être un partenaire de confiance pour vous accompagner dans la réalisation de vos ambitions
+                            et le renforcement de la performance de votre organisation.</p>
+                        <p data-i18n="index.ceo.quote"
+                            style="font-size: 1.1rem; font-style: italic; font-weight: 500; border-left: 3px solid var(--accent-gold); padding-left: 15px; margin-top: var(--space-6); color: var(--text-light); line-height: 1.6;">
+                            « L'intégrité inspire la confiance, l'innovation crée les opportunités, le professionnalisme
+                            garantit la qualité et la performance construit un avenir durable. »</p>
+                    </div>
+                    <a href="ceo.html" class="btn btn-primary magnetic-btn" aria-expanded="false" aria-controls="ceo-more">
+                        <span class="disclosure-open-label" data-i18n="index.ceo.cta">Découvrir le CEO</span>
+                        <span class="disclosure-close-label" data-i18n="ui.learnLess">Réduire</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="disclosure-panel" id="ceo-more">
+                        <p class="disclosure-label" data-i18n="ceo.exp.title">Expertises</p>
+                        <ul class="disclosure-list">
+                            <li data-i18n="ceo.exp.e1">Finance &amp; Gouvernance</li>
+                            <li data-i18n="ceo.exp.e2">Audit Institutionnel</li>
+                            <li data-i18n="ceo.exp.e3">Gestion des Risques</li>
+                            <li data-i18n="ceo.exp.e4">Gestion des Subventions Internationales</li>
+                            <li data-i18n="ceo.exp.e5">USAID, UE, FM, GAVI, BM, BAD</li>
+                        </ul>
+                        <a href="ceo.html" class="disclosure-sheet">
+                            <span data-i18n="ui.fullPage">Voir la page complète</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image-large" data-animate="fade-left">
+                    <div class="about-image-frame">
+                        <picture>
+                            <source type="image/webp" srcset="images/dr.webp 397w" sizes="(max-width: 768px) 92vw, 480px">
+                            <img src="images/dr.jpg" alt="Dr. John Kangolo Lunkamba - CEO KGL Management" width="397" height="399" loading="lazy" decoding="async" sizes="(max-width: 768px) 92vw, 480px" srcset="images/dr.jpg 397w">
+                        </picture>
+                                                
+                        <div class="about-image-badge">
+                            <div class="badge-number">20+</div>
+                            <div class="badge-text" data-i18n="index.stats.exp">Ans d'expertise</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-gradient"></div>
+            <div class="cta-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-animate="fade-up">
+                <h2 data-i18n="index.cta.title">Prêt à transformer votre organisation ?</h2>
+                <p data-i18n="index.cta.desc">Discutons de vos besoins et construisons ensemble des solutions durables pour votre entreprise.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large magnetic-btn">
+                        <span data-i18n="index.cta.btn1">Prendre rendez-vous</span>
+                        <i class="fas fa-calendar-check"></i>
+                    </a>
+                    <a href="https://wa.me/243812430023" class="btn btn-outline btn-large magnetic-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="index.cta.btn2">WhatsApp direct</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta-content">
+            <span data-i18n="sticky.text">Discutons de votre projet</span>
+            <a href="https://wa.me/243812430023" class="sticky-cta-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span data-i18n="ui.contact">Contacter</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center mb-12">
+            <div class="footer-pre-content">
+                <h2 class="gradient-text" data-i18n="footer.cta.title">Prêt à transformer votre performance ?</h2>
+                <p data-i18n="footer.cta.desc">Rejoignez les leaders qui font confiance à KGL Management pour leur excellence stratégique.</p>
+                <div class="footer-newsletter-mini">
+                    <form class="newsletter-form" action="https://formspree.io/f/xjkyqazj" method="POST">
+                        <input type="email" name="email" placeholder="Votre e-mail" data-i18n-placeholder="footer.email" required aria-label="Adresse e-mail">
+                        <button type="submit" class="btn btn-primary btn-sm" data-i18n="ui.subscribe">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo-kgl.jpg" alt="KGL Management" decoding="async" width="236" height="126" loading="lazy">
+                    </a>
+                    <p class="footer-description" data-i18n="footer.desc">Cabinet National de conseil spécialisé en management, gouvernance et
+                        performance des organisations en RDC.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/243812430023" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.expertise">Expertise</h4>
+                    <ul>
+                        <li><a href="services.html"><span data-i18n="footer.services">Services</span></a></li>
+                        <li><a href="secteurs.html"><span data-i18n="footer.sectors">Secteurs</span></a></li>
+                        <li><a href="formations.html"><span data-i18n="nav.training">Formations</span></a></li>
+                        <li><a href="etudes-de-cas.html"><span data-i18n="footer.cases">Études de Cas</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.resourcesTitle">Ressources</h4>
+                    <ul>
+                        <li><a href="blog.html"><span data-i18n="footer.news">Actualités</span></a></li>
+                        <li><a href="ressources.html"><span data-i18n="footer.library">Bibliothèque</span></a></li>
+                        <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
+                        <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
+                        <li><a href="galerie.html"><span data-i18n="nav.gallery">Galerie</span></a></li>
+                        <li><a href="conformite.html"><span data-i18n="nav.compliance">Conformité</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-i18n="footer.company">Société</h4>
+                    <ul>
+                        <li><a href="apropos.html"><span data-i18n="footer.about">À Propos</span></a></li>
+                        <li><a href="ceo.html"><span data-i18n="nav.ceo">Le CEO</span></a></li>
+                        <li><a href="carrieres.html"><span data-i18n="nav.careers">Carrières</span></a></li>
+                        <li><a href="partenaires.html"><span data-i18n="nav.partners">Partenaires</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p data-i18n="footer.copyright">&copy; 2026 KGL MANAGEMENT, BUSINESS & CONSULTING. Tous droits réservés.</p>
+                </div>
+                <div class="footer-refs">
+                    <span><a href="mentions-legales.html#confidentialite" data-i18n="footer.privacy">Confidentialité</a></span>
+                    <span><a href="mentions-legales.html" data-i18n="footer.legal">Mentions Légales</a></span>
+                    <span><a href="mentions-legales.html#plan-du-site" data-i18n="footer.sitemap">Plan du site</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <!-- ===== FICHE COMPLETE : une seule fiche affichee a la fois ===== -->
+    <div class="fiche-modal" id="ficheModal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Fiche de service" data-i18n-aria="ui.ficheDialogTitle" data-lenis-prevent>
+        <div class="fiche-modal-backdrop" data-fiche-close></div>
+        <div class="fiche-modal-dialog">
+            <button type="button" class="fiche-modal-close" data-fiche-close aria-label="Fermer" data-i18n-aria="ui.close">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <div class="fiche-modal-body">
+                <article class="fiche" data-fiche-id="management">
+                    <div class="fiche-media"><picture>
+                            <source type="image/webp" srcset="images/diagnostic-institutionnel-640.webp 640w, images/diagnostic-institutionnel.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                            <img src="images/diagnostic-institutionnel.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/diagnostic-institutionnel-640.webp 640w, images/diagnostic-institutionnel.jpg 1024w">
+                        </picture></div>
+                    <div class="fiche-content">
+                        <span class="fiche-badge" data-i18n="ui.ficheLabel">Fiche de service</span>
+                        <h3 class="fiche-title" data-i18n="index.svc.management">Management</h3>
+                        <p class="fiche-desc" data-i18n="index.svc.management.desc">Diagnostic organisationnel, restructuration, business process reengineering, plan stratégique et organisation institutionnelle.</p>
+                        <p class="disclosure-label" data-i18n="ui.detailLabel">Ce que nous couvrons</p>
+                        <ul class="disclosure-list">
+                            <li data-i18n="index.svc.management.more1">Diagnostic organisationnel complet et cartographie des processus existants</li>
+                            <li data-i18n="index.svc.management.more2">Restructuration, reengineering des processus et refonte de l'organigramme</li>
+                            <li data-i18n="index.svc.management.more3">Plan stratégique à 3-5 ans avec dispositif de suivi-évaluation</li>
+                        </ul>
+                        <div class="fiche-actions">
+                            <a href="contact.html" class="btn btn-primary">
+                                <span data-i18n="ui.requestQuote">Demander un devis</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="services.html" class="disclosure-sheet">
+                                <span data-i18n="ui.allServices">Tous nos services</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="fiche" data-fiche-id="governance">
+                    <div class="fiche-media"><picture>
+                            <source type="image/webp" srcset="images/accompagnement-entreprises-640.webp 640w, images/accompagnement-entreprises.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                            <img src="images/accompagnement-entreprises.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/accompagnement-entreprises-640.webp 640w, images/accompagnement-entreprises.jpg 1024w">
+                        </picture></div>
+                    <div class="fiche-content">
+                        <span class="fiche-badge" data-i18n="ui.ficheLabel">Fiche de service</span>
+                        <h3 class="fiche-title" data-i18n="index.svc.governance">Gouvernance & Performance MPMEs</h3>
+                        <p class="fiche-desc" data-i18n="index.svc.governance.desc">Accompagnement des micros, petites et moyennes entreprises dans l'amélioration de leur gouvernance et performance.</p>
+                        <p class="disclosure-label" data-i18n="ui.detailLabel">Ce que nous couvrons</p>
+                        <ul class="disclosure-list">
+                            <li data-i18n="index.svc.governance.more1">Mise en place des instances de gouvernance et de leurs supports de décision</li>
+                            <li data-i18n="index.svc.governance.more2">Formalisation des procédures internes et des délégations de pouvoir</li>
+                            <li data-i18n="index.svc.governance.more3">Tableaux de bord de performance et indicateurs de pilotage</li>
+                        </ul>
+                        <div class="fiche-actions">
+                            <a href="contact.html" class="btn btn-primary">
+                                <span data-i18n="ui.requestQuote">Demander un devis</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="services.html" class="disclosure-sheet">
+                                <span data-i18n="ui.allServices">Tous nos services</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="fiche" data-fiche-id="finance">
+                    <div class="fiche-media"><picture>
+                            <source type="image/webp" srcset="images/gestion-financiere-640.webp 640w, images/gestion-financiere.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                            <img src="images/gestion-financiere.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/gestion-financiere-640.webp 640w, images/gestion-financiere.jpg 1024w">
+                        </picture></div>
+                    <div class="fiche-content">
+                        <span class="fiche-badge" data-i18n="ui.ficheLabel">Fiche de service</span>
+                        <h3 class="fiche-title" data-i18n="index.svc.finance">Finance pour les MPMEs</h3>
+                        <p class="fiche-desc" data-i18n="index.svc.finance.desc">Gestion financière, comptabilité, contrôle budgétaire, analyse financière et cash management.</p>
+                        <p class="disclosure-label" data-i18n="ui.detailLabel">Ce que nous couvrons</p>
+                        <ul class="disclosure-list">
+                            <li data-i18n="index.svc.finance.more1">Organisation du service financier et mise en place du plan comptable</li>
+                            <li data-i18n="index.svc.finance.more2">Prévisions, contrôle budgétaire et reporting de gestion mensuel</li>
+                            <li data-i18n="index.svc.finance.more3">Analyse de rentabilité, trésorerie et optimisation du cash management</li>
+                        </ul>
+                        <div class="fiche-actions">
+                            <a href="contact.html" class="btn btn-primary">
+                                <span data-i18n="ui.requestQuote">Demander un devis</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="services.html" class="disclosure-sheet">
+                                <span data-i18n="ui.allServices">Tous nos services</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="fiche" data-fiche-id="audit">
+                    <div class="fiche-media"><picture>
+                            <source type="image/webp" srcset="images/audit-controle-640.webp 640w, images/audit-controle.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                            <img src="images/audit-controle.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/audit-controle-640.webp 640w, images/audit-controle.jpg 1024w">
+                        </picture></div>
+                    <div class="fiche-content">
+                        <span class="fiche-badge" data-i18n="ui.ficheLabel">Fiche de service</span>
+                        <h3 class="fiche-title" data-i18n="index.svc.audit">Audit Institutionnel</h3>
+                        <p class="fiche-desc" data-i18n="index.svc.audit.desc">Audit et contrôle interne, audit opérationnel et diagnostic organisationnel pour garantir la conformité.</p>
+                        <p class="disclosure-label" data-i18n="ui.detailLabel">Ce que nous couvrons</p>
+                        <ul class="disclosure-list">
+                            <li data-i18n="index.svc.audit.more1">Audits d'engagement, de conformité et audit opérationnel</li>
+                            <li data-i18n="index.svc.audit.more2">Évaluation du dispositif de contrôle interne et des procédures</li>
+                            <li data-i18n="index.svc.audit.more3">Rapport d'observations et plan d'action correctif priorisé</li>
+                        </ul>
+                        <div class="fiche-actions">
+                            <a href="contact.html" class="btn btn-primary">
+                                <span data-i18n="ui.requestQuote">Demander un devis</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="services.html" class="disclosure-sheet">
+                                <span data-i18n="ui.allServices">Tous nos services</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="fiche" data-fiche-id="risks">
+                    <div class="fiche-media"><picture>
+                            <source type="image/webp" srcset="images/cartographie-risques-640.webp 640w, images/cartographie-risques.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                            <img src="images/cartographie-risques.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/cartographie-risques-640.webp 640w, images/cartographie-risques.jpg 1024w">
+                        </picture></div>
+                    <div class="fiche-content">
+                        <span class="fiche-badge" data-i18n="ui.ficheLabel">Fiche de service</span>
+                        <h3 class="fiche-title" data-i18n="index.svc.risk">Gestion des Risques & Conformité</h3>
+                        <p class="fiche-desc" data-i18n="index.svc.risk.desc">Cartographie des risques, contrôle interne, compliance, anti-fraude, due diligence et investigations.</p>
+                        <p class="disclosure-label" data-i18n="ui.detailLabel">Ce que nous couvrons</p>
+                        <ul class="disclosure-list">
+                            <li data-i18n="index.svc.risk.more1">Cartographie des risques et évaluation probabilité / impact</li>
+                            <li data-i18n="index.svc.risk.more2">Dispositif anti-fraude, devoir de vigilance et gestion des litiges</li>
+                            <li data-i18n="index.svc.risk.more3">Conformité réglementaire, due diligence et investigations internes</li>
+                        </ul>
+                        <div class="fiche-actions">
+                            <a href="contact.html" class="btn btn-primary">
+                                <span data-i18n="ui.requestQuote">Demander un devis</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="services.html" class="disclosure-sheet">
+                                <span data-i18n="ui.allServices">Tous nos services</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="fiche" data-fiche-id="development">
+                    <div class="fiche-media"><picture>
+                            <source type="image/webp" srcset="images/creation-startup-640.webp 640w, images/creation-startup.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                            <img src="images/creation-startup.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/creation-startup-640.webp 640w, images/creation-startup.jpg 1024w">
+                        </picture></div>
+                    <div class="fiche-content">
+                        <span class="fiche-badge" data-i18n="ui.ficheLabel">Fiche de service</span>
+                        <h3 class="fiche-title" data-i18n="index.svc.dev">Développement des Entreprises</h3>
+                        <p class="fiche-desc" data-i18n="index.svc.dev.desc">Création d'entreprise, business plan, étude de faisabilité, étude de marché, accompagnement des PME et levée de fonds.</p>
+                        <p class="disclosure-label" data-i18n="ui.detailLabel">Ce que nous couvrons</p>
+                        <ul class="disclosure-list">
+                            <li data-i18n="index.svc.dev.more1">Étude de faisabilité, étude de marché et business plan</li>
+                            <li data-i18n="index.svc.dev.more2">Création, structuration et formalisation de l'entreprise</li>
+                            <li data-i18n="index.svc.dev.more3">Recherche de financement, business angels et levée de fonds</li>
+                        </ul>
+                        <div class="fiche-actions">
+                            <a href="contact.html" class="btn btn-primary">
+                                <span data-i18n="ui.requestQuote">Demander un devis</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="services.html" class="disclosure-sheet">
+                                <span data-i18n="ui.allServices">Tous nos services</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="fiche" data-fiche-id="training">
+                    <div class="fiche-media"><picture>
+                            <source type="image/webp" srcset="images/formation-gestion-640.webp 640w, images/formation-gestion.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
+                            <img src="images/formation-gestion.jpg" alt="" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/formation-gestion-640.webp 640w, images/formation-gestion.jpg 1024w">
+                        </picture></div>
+                    <div class="fiche-content">
+                        <span class="fiche-badge" data-i18n="ui.ficheLabel">Fiche de service</span>
+                        <h3 class="fiche-title" data-i18n="index.svc.training">Renforcement des Capacités</h3>
+                        <p class="fiche-desc" data-i18n="index.svc.training.desc">Formations en gestion financière, leadership, gestion de projets, logiciels comptables, contrôle interne et entrepreneuriat.</p>
+                        <p class="disclosure-label" data-i18n="ui.detailLabel">Ce que nous couvrons</p>
+                        <ul class="disclosure-list">
+                            <li data-i18n="index.svc.training.more1">Gestion financière, comptabilité et logiciels de gestion</li>
+                            <li data-i18n="index.svc.training.more2">Leadership, gestion de projets et outils de pilotage</li>
+                            <li data-i18n="index.svc.training.more3">Contrôle interne, entrepreneuriat et gestion des équipes</li>
+                        </ul>
+                        <div class="fiche-actions">
+                            <a href="contact.html" class="btn btn-primary">
+                                <span data-i18n="ui.requestQuote">Demander un devis</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="services.html" class="disclosure-sheet">
+                                <span data-i18n="ui.allServices">Tous nos services</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+
+<!-- JavaScript -->
+        <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/premium-upgrades.js"></script>
+    <script src="js/ultra-premium.js"></script>
+</body>
+
+</html>

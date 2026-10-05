@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion Espace Client — KGL Management</title>
+    <link rel="canonical" href="https://kglgroup.netlify.app/connexion.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Fonts : Cooper Hewitt (auto-hebergee) -->
+    <link rel="preload" href="fonts/CooperHewitt-Book.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="fonts/CooperHewitt-Semibold.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="fonts/CooperHewitt-Bold.otf" as="font" type="font/otf" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Filet de securite : sans JS, #preloader (position:fixed, inset:0) masque
+         tout le site et les elements [data-animate] restent en opacity:0.
+         On retire les deux blocages pour que la page reste lisible. -->
+    <noscript>
+        <style>
+            #preloader { display: none !important; }
+            [data-animate] { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+            #cursor, #cursor-follower, #scroll-progress { display: none !important; }
+            #page-transition-overlay, .ambient-glow-top, .ambient-glow-bottom { display: none !important; }
+        </style>
+    </noscript>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kglgroup.netlify.app/connexion.html">
+    <meta property="og:title" content="Connexion Espace Client — KGL Management">
+    <meta property="og:description" content="Connexion Espace Client — KGL Management">
+    <meta property="og:image" content="https://kglgroup.netlify.app/images/logo-kgl.jpg">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://kglgroup.netlify.app/connexion.html">
+    <meta name="twitter:title" content="Connexion Espace Client — KGL Management">
+    <meta name="twitter:description" content="Connexion Espace Client — KGL Management">
+    <meta name="twitter:image" content="https://kglgroup.netlify.app/images/logo-kgl.jpg">
+
+    <!-- JSON-LD Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "KGL Management, Business & Consulting",
+      "url": "https://kglgroup.netlify.app",
+      "logo": "https://kglgroup.netlify.app/images/logo-kgl.jpg",
+      "description": "Connexion Espace Client — KGL Management"
+    }
+    </script>
+</head>
+
+<body class="auth-page">
+    <noscript>
+        <div class="nojs-banner">
+            <p><strong>JavaScript est desactive.</strong> La page reste consultable, mais certains elements interactifs ne repondent pas.</p>
+            <a href="https://wa.me/243812430023" class="nojs-banner-cta" rel="noopener">Nous ecrire sur WhatsApp</a>
+        </div>
+    </noscript>
+
+    <div class="auth-container">
+        <div class="auth-box" data-animate="fade-up">
+            <a href="index.html" class="auth-logo">
+                <img src="images/logo-kgl.jpg" alt="KGL Management" decoding="async" width="236" height="126" loading="eager">
+            </a>
+            <h1 data-i18n="login.title">Bienvenue</h1>
+            <p data-i18n="login.desc">Connectez-vous à votre portail sécurisé pour suivre vos missions et accéder à vos rapports.</p>
+
+            <form class="premium-form">
+                <div class="form-group">
+                    <label data-i18n="login.email">E-mail professionnel</label>
+                    <input type="email" placeholder="nom@entreprise.com" data-i18n-placeholder="login.emailPlaceholder" required>
+                </div>
+                <div class="form-group">
+                    <label data-i18n="login.password">Mot de passe</label>
+                    <input type="password" placeholder="••••••••" data-i18n-placeholder="login.passPlaceholder" required>
+                </div>
+                <div class="auth-options">
+                    <label class="remember-me">
+                        <input type="checkbox"> <span data-i18n="login.remember">Se souvenir de moi</span>
+                    </label>
+                    <a href="contact.html" class="forgot-pass" data-i18n="login.forgot">Mot de passe oublié ?</a>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" data-i18n="login.submit">Se connecter</button>
+            </form>
+
+            <div class="auth-footer">
+                <p><span data-i18n="login.newClient">Nouveau client ?</span> <a href="contact.html" data-i18n="login.requestAccess">Demandez vos accès</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast-container"></div>
+
+        <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/premium-upgrades.js"></script>
+    <script src="js/ultra-premium.js"></script>
+</body>
+
+</html>

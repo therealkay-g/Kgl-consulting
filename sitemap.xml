@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://kglgroup.netlify.app/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/apropos.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/apropos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/apropos.html"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/ceo.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/ceo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/ceo.html"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/services.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/services.html"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/secteurs.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/secteurs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/secteurs.html"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/formations.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/formations.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/formations.html"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/blog.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/blog.html"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/etudes-de-cas.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/etudes-de-cas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/etudes-de-cas.html"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/ressources.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/ressources.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/ressources.html"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/faq.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/faq.html"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/projets.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/projets.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/projets.html"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/conformite.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/conformite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/conformite.html"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/partenaires.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/partenaires.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/partenaires.html"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/carrieres.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/carrieres.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/carrieres.html"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/galerie.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/galerie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/galerie.html"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/contact.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/contact.html"/>
+  </url>
+
+  <url>
+    <loc>https://kglgroup.netlify.app/mentions-legales.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/mentions-legales.html"/>
+  </url>
+
+</urlset>

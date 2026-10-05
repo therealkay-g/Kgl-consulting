@@ -1,0 +1,16 @@
+# Sauvegarde locale pre-refonte : doublon, ne pas publier
+_backup_pre_refonte/
+
+# Systeme
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Editeurs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log

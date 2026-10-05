@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kglgroup.netlify.app/sitemap.xml
+
+# Ressources statiques (autorisées pour le SEO)
+Allow: /css/
+Allow: /js/
+Allow: /*.html
+
+# Fichiers de développement (à bloquer si présents)
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /drafts/
