@@ -22,6 +22,8 @@
     <link rel="preload" href="fonts/CooperHewitt-Bold.otf" as="font" type="font/otf" crossorigin>
 <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <meta name="theme-color" content="#17418A">
+    <meta name="referrer" content="no-referrer-when-downgrade">
     <!-- Filet de securite : sans JS, #preloader (position:fixed, inset:0) masque
          tout le site et les elements [data-animate] restent en opacity:0.
          On retire les deux blocages pour que la page reste lisible. -->
@@ -67,6 +69,40 @@
             <a href="https://wa.me/243812430023" class="nojs-banner-cta" rel="noopener">Nous ecrire sur WhatsApp</a>
         </div>
     </noscript>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="images/logo-kgl.jpg" alt="KGL Management" decoding="async" width="236" height="126" loading="eager">
+            </div>
+            <div class="preloader-text" data-i18n="ui.loading">Chargement...</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Back to Top -->
+    <a href="#" id="back-to-top" aria-label="Retour en haut" data-i18n-aria="ui.backTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/243812430023" class="whatsapp-float" target="_blank" aria-label="Contactez-nous sur WhatsApp" data-i18n-aria="ui.whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip" data-i18n="ui.whatsappTip">Discutons sur WhatsApp</span>
+    </a>
 
     <!-- Header -->
     <header id="header">
@@ -127,10 +163,14 @@
     </header>
 
     <!-- Page Header -->
-    <section class="page-header">
-        <div class="container text-center">
-            <h1 data-i18n="partners.title">Partenaires & Alliances</h1>
-            <p data-i18n="partners.subtitle">Un écosystème collaboratif pour des résultats durables</p>
+    <section class="page-header executive-header">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80');">
+            <div class="hero-overlay-refined"></div>
+        </div>
+        <div class="container text-center relative z-10">
+            <span class="premium-label" data-animate="fade-up" data-i18n="partners.label">Écosystème de confiance</span>
+            <h1 data-animate="clip-reveal" data-i18n="partners.title">Partenaires & Alliances</h1>
+            <p data-animate="fade-up" data-delay="2" data-i18n="partners.subtitle">Un écosystème collaboratif pour des résultats durables</p>
             <div class="breadcrumb">
                 <a href="index.html" data-i18n="ui.breadcrumb.home">Accueil</a>
                 <span>/</span>
@@ -142,90 +182,208 @@
     <!-- Partners Sections -->
     <section class="section-padding bg-light">
         <div class="container">
+            <div class="section-title" data-animate="fade-up">
+                <span class="section-label" data-i18n="partners.list.label">Ils nous font confiance</span>
+                <h2 data-i18n="partners.list.title">Nos partenaires stratégiques</h2>
+                <p data-animate="fade-up" data-i18n="partners.list.desc">Institutions, universités et entreprises qui partagent notre exigence d'excellence.</p>
+            </div>
             <div class="partners-types">
                 <!-- 1. Institutions -->
                 <div class="partner-group" data-animate="fade-up">
                     <h2 class="group-title" data-i18n="partners.group1.title">Institutions & Bailleurs</h2>
-                    <div class="partners-grid-premium">
-                        <div class="partner-item">ANADEC</div>
-                        <div class="partner-item">USAID</div>
-                        <div class="partner-item">Fonds Mondial</div>
-                        <div class="partner-item">GAVI</div>
+                    <p class="group-desc" data-i18n="partners.group1.desc">Des collaborations institutionnelles au service du développement et de l'entrepreneuriat congolais.</p>
+                    <div class="partners-logos-grid">
+                        <div class="partner-card">
+                            <div class="partner-logo-box">
+                                <img src="images/partenaire-anadec.png" alt="ANADEC — Agence Nationale de Développement de l'Entrepreneuriat Congolais" loading="lazy" decoding="async" width="224" height="224">
+                            </div>
+                            <h3>ANADEC</h3>
+                            <p data-i18n="partners.card.anadec">Agence Nationale de Développement de l'Entrepreneuriat Congolais — appui à l'entrepreneuriat national.</p>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-logo-box">
+                                <span class="partner-initials">USAID</span>
+                            </div>
+                            <h3>USAID</h3>
+                            <p data-i18n="partners.card.usaid">Gestion et suivi de subventions internationales selon les standards des bailleurs américains.</p>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-logo-box">
+                                <span class="partner-initials">FM</span>
+                            </div>
+                            <h3 data-i18n="partners.card.fm.title">Fonds Mondial</h3>
+                            <p data-i18n="partners.card.fm">Expertise en gestion fiduciaire des financements santé (Fonds Mondial, GAVI).</p>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-logo-box">
+                                <span class="partner-initials">GAVI</span>
+                            </div>
+                            <h3>GAVI</h3>
+                            <p data-i18n="partners.card.gavi">Accompagnement des programmes de vaccination et de renforcement des systèmes de santé.</p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- 2. Universités -->
                 <div class="partner-group" data-animate="fade-up" data-delay="1">
                     <h2 class="group-title" data-i18n="partners.group2.title">Alliances Académiques</h2>
-                    <div class="partners-grid-premium">
-                        <div class="partner-item">HEC-KIN</div>
-                        <div class="partner-item">Suisse</div>
-                        <div class="partner-item">Université de Poitiers</div>
+                    <p class="group-desc" data-i18n="partners.group2.desc">L'excellence académique au service de la recherche, de la formation et de la rigueur scientifique.</p>
+                    <div class="partners-logos-grid">
+                        <div class="partner-card">
+                            <div class="partner-logo-box">
+                                <img src="images/partenaire-hec-kin.png" alt="HEC-KIN — Haute École de Commerce de Kinshasa" loading="lazy" decoding="async" width="225" height="225">
+                            </div>
+                            <h3>HEC-KIN</h3>
+                            <p data-i18n="partners.card.heccin">Haute École de Commerce de Kinshasa — enseignement, recherche et publications scientifiques.</p>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-logo-box">
+                                <span class="partner-initials">CH</span>
+                            </div>
+                            <h3 data-i18n="partners.card.suisse.title">Suisse</h3>
+                            <p data-i18n="partners.card.suisse">Doctorat en Administration des Affaires — ancrage académique international du CEO.</p>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-logo-box">
+                                <span class="partner-initials">UP</span>
+                            </div>
+                            <h3 data-i18n="partners.card.poitiers.title">Université de Poitiers</h3>
+                            <p data-i18n="partners.card.poitiers">Master en Management International — management stratégique à l'international.</p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- 3. ONG & Entreprises -->
                 <div class="partner-group" data-animate="fade-up" data-delay="2">
                     <h2 class="group-title" data-i18n="partners.group3.title">ONG & Entreprises</h2>
-                    <div class="partners-grid-premium">
-                        <div class="partner-item">HUMANITAS</div>
-                        <div class="partner-item" data-i18n="partners.item.pme_diverses">PME Diverses</div>
-                        <div class="partner-item" data-i18n="partners.item.grandes_entreprises">Grandes Entreprises</div>
+                    <p class="group-desc" data-i18n="partners.group3.desc">Un accompagnement de proximité pour les organisations de la société civile et le secteur privé.</p>
+                    <div class="partners-logos-grid">
+                        <div class="partner-card">
+                            <div class="partner-logo-box">
+                                <img src="images/partenaire-humanitas.png" alt="HUMANITAS" loading="lazy" decoding="async" width="175" height="132">
+                            </div>
+                            <h3>HUMANITAS</h3>
+                            <p data-i18n="partners.card.humanitas">Partenaire associatif — gouvernance, gestion de projets et développement communautaire.</p>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-logo-box">
+                                <i class="fas fa-store partner-icon" aria-hidden="true"></i>
+                            </div>
+                            <h3 data-i18n="partners.item.pme_diverses">PME Diverses</h3>
+                            <p data-i18n="partners.card.pme">Structuration, finance et conformité pour les petites et moyennes entreprises congolaises.</p>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-logo-box">
+                                <i class="fas fa-building partner-icon" aria-hidden="true"></i>
+                            </div>
+                            <h3 data-i18n="partners.item.grandes_entreprises">Grandes Entreprises</h3>
+                            <p data-i18n="partners.card.grandes">Audit institutionnel, gouvernance et performance pour les grands comptes privés et publics.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center mb-12">
-            <div class="footer-pre-content">
-                <h2 class="gradient-text" data-i18n="footer.cta.title">Prêt à transformer votre performance ?</h2>
-                <p data-i18n="footer.cta.desc">Rejoignez les leaders qui font confiance à KGL Management pour leur excellence stratégique.</p>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-gradient"></div>
+            <div class="cta-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-animate="fade-up">
+                <h2 data-i18n="partners.cta.title">Devenez partenaire</h2>
+                <p data-i18n="partners.cta.desc">Rejoignez un écosystème d'excellence et construisons ensemble des résultats durables en RDC.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large magnetic-btn">
+                        <span data-i18n="partners.cta.btn1">Prendre rendez-vous</span>
+                        <i class="fas fa-calendar-check"></i>
+                    </a>
+                    <a href="https://wa.me/243812430023" class="btn btn-outline btn-large magnetic-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="partners.cta.btn2">WhatsApp direct</span>
+                    </a>
+                </div>
             </div>
         </div>
+    </section>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta-content">
+            <span data-i18n="sticky.text">Discutons de votre projet</span>
+            <a href="https://wa.me/243812430023" class="sticky-cta-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span data-i18n="ui.contact">Contacter</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col footer-brand">
                     <a href="index.html" class="footer-logo">
                         <img src="images/logo-kgl.jpg" alt="KGL Management" decoding="async" width="236" height="126" loading="lazy">
                     </a>
-                    <p class="footer-description" data-i18n="footer.desc">Cabinet National de conseil spécialisé en management, gouvernance et performance des organisations en RDC.</p>
+                    <p class="footer-description">Cabinet National de conseil spécialisé en management, gouvernance, finance, audit, conformité et développement des entreprises.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://wa.me/243812430023" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4 data-i18n="footer.expertise">Expertise</h4>
+                    <h4>Navigation</h4>
                     <ul>
-                        <li><a href="services.html"><span data-i18n="footer.services">Services</span></a></li>
-                        <li><a href="secteurs.html"><span data-i18n="footer.sectors">Secteurs</span></a></li>
-                        <li><a href="formations.html"><span data-i18n="nav.training">Formations</span></a></li>
-                        <li><a href="etudes-de-cas.html"><span data-i18n="footer.cases">Études de Cas</span></a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 data-i18n="footer.resourcesTitle">Ressources</h4>
-                    <ul>
-                        <li><a href="blog.html"><span data-i18n="footer.news">Actualités</span></a></li>
-                        <li><a href="ressources.html"><span data-i18n="footer.library">Bibliothèque</span></a></li>
-                        <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
-                        <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
-                        <li><a href="galerie.html"><span data-i18n="nav.gallery">Galerie</span></a></li>
-                        <li><a href="conformite.html"><span data-i18n="nav.compliance">Conformité</span></a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 data-i18n="footer.company">Société</h4>
-                    <ul>
-                        <li><a href="apropos.html"><span data-i18n="footer.about">À Propos</span></a></li>
+                        <li><a href="index.html"><span data-i18n="nav.home">Accueil</span></a></li>
+                        <li><a href="apropos.html">À Propos</a></li>
                         <li><a href="ceo.html"><span data-i18n="nav.ceo">Le CEO</span></a></li>
-                        <li><a href="carrieres.html"><span data-i18n="nav.careers">Carrières</span></a></li>
-                        <li><a href="partenaires.html"><span data-i18n="nav.partners">Partenaires</span></a></li>
+                        <li><a href="services.html"><span data-i18n="footer.services">Services</span></a></li>
+                        <li><a href="projets.html">Réalisations</a></li>
+                        <li><a href="conformite.html">Conformité</a></li>
+                        <li><a href="contact.html"><span data-i18n="nav.contact">Contact</span></a></li>
                     </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nos services</h4>
+                    <ul>
+                        <li><a href="services.html#management">Management Consulting</a></li>
+                        <li><a href="services.html#business">Business Consulting</a></li>
+                        <li><a href="services.html#finance">Finance & Accounting</a></li>
+                        <li><a href="services.html#audit">Audit & Assurance</a></li>
+                        <li><a href="services.html#risques">Risk & Compliance</a></li>
+                        <li><a href="services.html#formation">Formation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+243812430023">+243 812 430 023</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/243812430023" target="_blank">+243 812 430 023</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Boulevard du Palais de la Nation<br>Gombe, Kinshasa, RDC</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2026 KGL MANAGEMENT, BUSINESS & CONSULTING. Tous droits réservés.</p>
+                </div>
+                <div class="footer-refs">
+                    <span><a href="mentions-legales.html#confidentialite">Politique de confidentialité</a></span>
+                    <span><a href="mentions-legales.html#conditions">Conditions d'utilisation</a></span>
                 </div>
             </div>
         </div>
