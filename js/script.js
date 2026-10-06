@@ -118,6 +118,9 @@
         // Active nav link
         safe('activeNavLink', initActiveNavLink);
 
+        // Netlify Identity (espace client)
+        safe('netlifyIdentity', initNetlifyIdentity);
+
         // Form handling
         safe('forms', initForms);
 
@@ -311,7 +314,28 @@
 
         DOM.menuToggle.addEventListener('click', toggleMenu);
 
-        // Close on link click (dropdown parents navigate normally on mobile)
+        // Sous-menus deroulants : clic sur le parent pour ouvrir/fermer.
+        // Enregistre AVANT le handler de fermeture pour que stopPropagation
+        // l'empeche de refermer le menu pendant le depliage.
+        DOM.navMenu.querySelectorAll('li.has-dropdown > a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (window.matchMedia('(max-width: 768px)').matches) {
+                    e.preventDefault();
+                    // Bloque aussi l'autre ecouteur pose sur ce meme lien
+                    // (fermeture du menu) : les deux sont sur la meme cible,
+                    // stopPropagation seul ne suffirait pas.
+                    e.stopImmediatePropagation();
+                    const li = link.parentElement;
+                    const wasOpen = li.classList.contains('open');
+                    DOM.navMenu.querySelectorAll('li.has-dropdown.open').forEach(o => {
+                        if (o !== li) o.classList.remove('open');
+                    });
+                    li.classList.toggle('open', !wasOpen);
+                }
+            });
+        });
+
+        // Close on link click (uniquement les vrais liens de navigation)
         DOM.navMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 if (state.isMenuOpen) toggleMenu();
@@ -915,6 +939,9 @@
         e.preventDefault();
         const form = e.currentTarget;
 
+        // Le formulaire de connexion est géré par Netlify Identity
+        if (form.id === 'loginForm') return;
+
         // Honeypot : si un robot a rempli le champ invisible, on sort en silence
         // (aucun envoi, aucun message — le robot ne doit rien apprendre).
         const honey = form.querySelector('[name="_gotcha"]');
@@ -1155,6 +1182,79 @@
                 ticking = true;
             }
         }, { passive: true });
+    }
+
+    // ===== NETLIFY IDENTITY =====
+    function initNetlifyIdentity() {
+        if (!window.netlifyIdentity) return;
+
+        const loginForm = document.getElementById('loginForm');
+        const dashboard = document.getElementById('clientDashboard');
+        const logoutBtn = document.getElementById('logoutBtn');
+
+        if (!loginForm || !dashboard) return;
+
+        // Déjà connecté ?
+        const user = netlifyIdentity.currentUser();
+        if (user) showDashboard(user);
+
+        // Soumission du formulaire → login Netlify Identity
+        loginForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const email = loginForm.querySelector('input[name="email"]').value.trim();
+            const password = loginForm.querySelector('input[name="password"]').value;
+
+            if (!email || !password) {
+                showToast('Veuillez remplir tous les champs.', 'error');
+                return;
+            }
+
+            netlifyIdentity.loginWithPassword(email, password)
+                .then(function (u) {
+                    showToast('Connexion réussie !', 'success');
+                    showDashboard(u);
+                })
+                .catch(function (err) {
+                    showToast(err.message || 'Erreur de connexion.', 'error');
+                });
+        });
+
+        // Déconnexion
+        if (logoutBtn) {
+            logoutBtn.addEventListener('click', function () {
+                netlifyIdentity.logout();
+                dashboard.hidden = true;
+                loginForm.hidden = false;
+                showToast('Vous êtes déconnecté.', 'info');
+            });
+        }
+
+        // Événements Netlify Identity
+        netlifyIdentity.on('login', function (u) { showDashboard(u); });
+        netlifyIdentity.on('logout', function () {
+            dashboard.hidden = true;
+            loginForm.hidden = false;
+        });
+    }
+
+    function showDashboard(user) {
+        const loginForm = document.getElementById('loginForm');
+        const dashboard = document.getElementById('clientDashboard');
+        const clientName = document.getElementById('clientName');
+        const clientEmail = document.getElementById('clientEmail');
+        const clientAvatar = document.getElementById('clientAvatar');
+
+        if (!loginForm || !dashboard) return;
+
+        loginForm.hidden = true;
+        dashboard.hidden = false;
+
+        const email = user.email || '';
+        const name = (user.user_metadata && user.user_metadata.full_name) || email.split('@')[0] || 'Client';
+
+        if (clientName) clientName.textContent = 'Bonjour, ' + name;
+        if (clientEmail) clientEmail.textContent = email;
+        if (clientAvatar) clientAvatar.textContent = name.charAt(0).toUpperCase();
     }
 
     // ===== EXPOSE TOAST GLOBALLY =====
