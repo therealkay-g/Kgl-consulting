@@ -135,8 +135,8 @@
                     <li>
                         <a href="blog.html"><span data-i18n="nav.insights">Insights</span> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="blog.html">Blog & Actualités</a></li>
-                            <li><a href="etudes-de-cas.html">Études de Cas</a></li>
+                            <li><a href="blog.html"><span data-i18n="nav.blog">Blog & Actualités</span></a></li>
+                            <li><a href="etudes-de-cas.html"><span data-i18n="nav.cases">Études de Cas</span></a></li>
                             <li><a href="ressources.html"><span data-i18n="nav.resources">Ressources & Guides</span></a></li>
                             <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
                         <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
@@ -144,12 +144,12 @@
                     </li>
                     <li><a href="formations.html"><span data-i18n="nav.training">Formations</span></a></li>
                     <li>
-                        <a href="apropos.html">Société <i class="fas fa-chevron-down"></i></a>
+                        <a href="apropos.html"><span data-i18n="nav.company">Société</span> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="apropos.html">À Propos de KGL</a></li>
+                            <li><a href="apropos.html"><span data-i18n="nav.about">À Propos de KGL</span></a></li>
                             <li><a href="ceo.html"><span data-i18n="nav.ceo">Le CEO</span></a></li>
                             <li><a href="partenaires.html"><span data-i18n="nav.partners">Partenaires</span></a></li>
-                            <li><a href="carrieres.html">Carrières</a></li>
+                            <li><a href="carrieres.html"><span data-i18n="nav.careers">Carrières</span></a></li>
                             <li><a href="galerie.html"><span data-i18n="nav.gallery">Galerie</span></a></li>
                         <li><a href="conformite.html"><span data-i18n="nav.compliance">Conformité</span></a></li>
                         </ul>
@@ -221,7 +221,7 @@
                         </div>
                         <div class="contact-method">
                             <span data-i18n="contact.p2.assistance">Assistance Priority</span>
-                            <a href="https://wa.me/243812430023">WhatsApp Direct</a>
+                            <a href="https://wa.me/243812430023" data-i18n="contact.p2.whatsapp">WhatsApp Direct</a>
                         </div>
                         <p class="availability" data-i18n="contact.p2.availability">Disponibilité : Lun - Ven | 08h - 18h</p>
                     </div>
@@ -254,12 +254,17 @@
             <div class="contact-layout">
                     <div class="contact-form-premium-v2" data-animate="fade-up">
                         <div class="section-title text-left mb-12">
-                            <span class="section-label" data-i18n="contact.title">Conciergerie KGL</span>
+                            <span class="section-label" data-i18n="contact.form.label">Écrivez-nous</span>
                             <h2 data-i18n="contact.form.title">Parlons de votre vision</h2>
                             <p data-i18n="contact.form.desc">Nos experts stratégiques sont à votre disposition pour transformer vos ambitions en réalités mesurables.</p>
                         </div>
 
-                        <form id="contactForm" action="https://formspree.io/f/xjkyqazj" method="POST" class="luxury-form">
+                        <form id="contactForm" action="https://formspree.io/f/xjkyqazj" method="POST" class="luxury-form" novalidate>
+                            <!-- _gotcha = honeypot anti-spam (Formspree) : invisible aux humains, piège les robots -->
+                            <div class="hp-field" aria-hidden="true">
+                                <label for="contactGotcha">Ne pas remplir ce champ</label>
+                                <input type="text" id="contactGotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+                            </div>
                             <div class="luxury-input-group">
                                 <div class="luxury-field">
                                     <input type="text" id="nom" name="nom" placeholder=" " required>
@@ -300,7 +305,7 @@
                             </div>
 
                             <div class="form-action-wrapper">
-                                <button type="submit" class="premium-submit">
+                                <button type="submit" class="premium-submit submit-btn">
                                     <span data-i18n="contact.form.submit">Initier la Consultation</span>
                                     <i class="fas fa-arrow-right"></i>
                                 </button>
@@ -354,60 +359,81 @@
         </div>
     </section>
 
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta-content">
+            <span data-i18n="sticky.text">Discutons de votre projet</span>
+            <a href="https://wa.me/243812430023" class="sticky-cta-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span data-i18n="ui.contact">Contacter</span>
+            </a>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
-        <div class="container text-center mb-12">
-            <div class="footer-pre-content">
-                <h2 class="gradient-text">Prêt à transformer votre performance ?</h2>
-                <p>Rejoignez les leaders qui font confiance à KGL Management pour leur excellence stratégique.</p>
-            </div>
-        </div>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col footer-brand">
                     <a href="index.html" class="footer-logo">
                         <img src="images/logo-kgl.jpg" alt="KGL Management" decoding="async" width="236" height="126" loading="lazy">
                     </a>
-                    <p class="footer-description">Cabinet National de conseil spécialisé en management, gouvernance et performance des organisations en RDC.</p>
+                    <p class="footer-description">Cabinet National de conseil spécialisé en management, gouvernance, finance, audit, conformité et développement des entreprises.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://wa.me/243812430023" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4 data-i18n="footer.expertise">Expertise</h4>
+                    <h4>Navigation</h4>
                     <ul>
-                        <li><a href="services.html"><span data-i18n="footer.services">Services</span></a></li>
-                        <li><a href="secteurs.html"><span data-i18n="footer.sectors">Secteurs</span></a></li>
-                        <li><a href="formations.html"><span data-i18n="nav.training">Formations</span></a></li>
-                        <li><a href="etudes-de-cas.html">Études de Cas</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 data-i18n="footer.resourcesTitle">Ressources</h4>
-                    <ul>
-                        <li><a href="blog.html">Actualités</a></li>
-                        <li><a href="ressources.html">Bibliothèque</a></li>
-                        <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
-                        <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
-                        <li><a href="galerie.html"><span data-i18n="nav.gallery">Galerie</span></a></li>
-                        <li><a href="conformite.html"><span data-i18n="nav.compliance">Conformité</span></a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Société</h4>
-                    <ul>
+                        <li><a href="index.html"><span data-i18n="nav.home">Accueil</span></a></li>
                         <li><a href="apropos.html">À Propos</a></li>
                         <li><a href="ceo.html"><span data-i18n="nav.ceo">Le CEO</span></a></li>
-                        <li><a href="carrieres.html">Carrières</a></li>
-                        <li><a href="partenaires.html"><span data-i18n="nav.partners">Partenaires</span></a></li>
+                        <li><a href="services.html"><span data-i18n="footer.services">Services</span></a></li>
+                        <li><a href="projets.html">Réalisations</a></li>
+                        <li><a href="conformite.html">Conformité</a></li>
+                        <li><a href="contact.html"><span data-i18n="nav.contact">Contact</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nos services</h4>
+                    <ul>
+                        <li><a href="services.html#management">Management Consulting</a></li>
+                        <li><a href="services.html#business">Business Consulting</a></li>
+                        <li><a href="services.html#finance">Finance & Accounting</a></li>
+                        <li><a href="services.html#audit">Audit & Assurance</a></li>
+                        <li><a href="services.html#risques">Risk & Compliance</a></li>
+                        <li><a href="services.html#formation">Formation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+243812430023">+243 812 430 023</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/243812430023" target="_blank">+243 812 430 023</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Boulevard du Palais de la Nation<br>Gombe, Kinshasa, RDC</span>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div class="copyright">
                     <p>&copy; 2026 KGL MANAGEMENT, BUSINESS & CONSULTING. Tous droits réservés.</p>
+                </div>
+                <div class="footer-refs">
+                    <span><a href="mentions-legales.html#confidentialite">Politique de confidentialité</a></span>
+                    <span><a href="mentions-legales.html#conditions">Conditions d'utilisation</a></span>
                 </div>
             </div>
         </div>

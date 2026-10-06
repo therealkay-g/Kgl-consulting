@@ -254,7 +254,7 @@ window.KGL_I18N = {
     'contact.p3.email': { fr: 'Email Officiel', en: 'Official Email' },
     'contact.p3.portal': { fr: 'Accéder au portail', en: 'Access the portal' },
     'contact.form.title': { fr: 'Parlons de votre vision', en: 'Let\'s talk about your vision' },
-    'contact.form.desc': { fr: 'Nos experts stratégiques sont à votre disposition pour transformer vos ambitions en réalités mesurables.', en: 'Our strategic experts are at your disposal to turn your ambitions into measurable realities.' },
+    'contact.form.label': { fr: 'Écrivez-nous', en: 'Write to us' },    'contact.form.desc': { fr: 'Nos experts stratégiques sont à votre disposition pour transformer vos ambitions en réalités mesurables.', en: 'Our strategic experts are at your disposal to turn your ambitions into measurable realities.' },
     'contact.form.name': { fr: 'Nom & Prénom', en: 'Full Name' },
     'contact.form.email': { fr: 'Adresse Email Institutionnelle', en: 'Institutional Email Address' },
     'contact.form.phone': { fr: 'Téléphone (WhatsApp)', en: 'Phone (WhatsApp)' },
