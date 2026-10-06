@@ -5428,6 +5428,20 @@ form.is-submitting .magnetic-btn {
     line-height: 1.7;
 }
 
+.experience-grid.cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+    .experience-grid.cols-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.experience-card .btn {
+    margin-top: var(--space-4);
+}
+
 /* ===== CEO PROFILE GRID (ceo.html) ===== */
 .ceo-profile-grid {
     display: grid;

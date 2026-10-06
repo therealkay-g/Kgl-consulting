@@ -533,6 +533,10 @@ window.KGL_I18N = {
     'careers.form.cvHint': { fr: 'PDF, DOC ou DOCX — 25 Mo maximum', en: 'PDF, DOC or DOCX — 25 MB max' },
     'careers.form.privacyNote': { fr: 'Vos informations sont utilisées uniquement pour traiter votre candidature.', en: 'Your information is used only to process your application.' },
     'careers.form.submit': { fr: 'Envoyer mon profil', en: 'Send my profile' },
+    'careers.cta.title': { fr: 'Prêt à nous rejoindre ?', en: 'Ready to join us?' },
+    'careers.cta.desc': { fr: "Envoyez votre candidature et intégrez un écosystème d'excellence en RDC.", en: 'Send your application and join an ecosystem of excellence in the DRC.' },
+    'careers.cta.btn1': { fr: 'Postuler maintenant', en: 'Apply now' },
+    'careers.cta.btn2': { fr: 'WhatsApp direct', en: 'Direct WhatsApp' },
 
     // --- Feedback formulaires ---
     'ui.sending': { fr: 'Envoi...', en: 'Sending...' },
