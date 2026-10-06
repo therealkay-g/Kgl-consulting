@@ -2339,7 +2339,7 @@ footer {
 }
 
 .footer-col a {
-    color: var(--gray-500);
+    color: #C7D3E8;
     font-size: var(--text-sm);
     transition: var(--transition-base);
     display: inline-block;
@@ -3105,6 +3105,17 @@ html {
 [data-theme="dark"] header:not(.scrolled) .nav-menu a {
     color: var(--text-primary);
     text-shadow: none;
+}
+
+/* Menu mobile plein ecran : liens blancs (specificite superieure) */
+@media (max-width: 768px) {
+    [data-theme="light"] header .nav-menu.active a,
+    [data-theme="dark"] header .nav-menu.active a,
+    [data-theme="light"] header .nav-menu a,
+    [data-theme="dark"] header .nav-menu a {
+        color: #FFFFFF !important;
+        text-shadow: none;
+    }
 }
 
 [data-theme="light"] header:not(.scrolled) .hamburger-line,
