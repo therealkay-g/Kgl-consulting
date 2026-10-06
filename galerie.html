@@ -22,6 +22,8 @@
     <link rel="preload" href="fonts/CooperHewitt-Bold.otf" as="font" type="font/otf" crossorigin>
 <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <meta name="theme-color" content="#17418A">
+    <meta name="referrer" content="no-referrer-when-downgrade">
     <!-- Filet de securite : sans JS, #preloader (position:fixed, inset:0) masque
          tout le site et les elements [data-animate] restent en opacity:0.
          On retire les deux blocages pour que la page reste lisible. -->
@@ -68,6 +70,40 @@
         </div>
     </noscript>
 
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <img src="images/logo-kgl.jpg" alt="KGL Management" decoding="async" width="236" height="126" loading="eager">
+            </div>
+            <div class="preloader-text" data-i18n="ui.loading">Chargement...</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Back to Top -->
+    <a href="#" id="back-to-top" aria-label="Retour en haut" data-i18n-aria="ui.backTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/243812430023" class="whatsapp-float" target="_blank" aria-label="Contactez-nous sur WhatsApp" data-i18n-aria="ui.whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip" data-i18n="ui.whatsappTip">Discutons sur WhatsApp</span>
+    </a>
+
     <!-- Header -->
     <header id="header">
         <div class="container header-container">
@@ -92,8 +128,8 @@
                     <li>
                         <a href="blog.html"><span data-i18n="nav.insights">Insights</span> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="blog.html">Blog & Actualités</a></li>
-                            <li><a href="etudes-de-cas.html">Études de Cas</a></li>
+                            <li><a href="blog.html"><span data-i18n="nav.blog">Blog & Actualités</span></a></li>
+                            <li><a href="etudes-de-cas.html"><span data-i18n="nav.cases">Études de Cas</span></a></li>
                             <li><a href="ressources.html"><span data-i18n="nav.resources">Ressources & Guides</span></a></li>
                             <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
                         <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
@@ -101,12 +137,12 @@
                     </li>
                     <li><a href="formations.html"><span data-i18n="nav.training">Formations</span></a></li>
                     <li>
-                        <a href="apropos.html" class="active">Société <i class="fas fa-chevron-down"></i></a>
+                        <a href="apropos.html" class="active"><span data-i18n="nav.company">Société</span> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="apropos.html">À Propos de KGL</a></li>
+                            <li><a href="apropos.html"><span data-i18n="nav.about">À Propos de KGL</span></a></li>
                             <li><a href="ceo.html"><span data-i18n="nav.ceo">Le CEO</span></a></li>
                             <li><a href="partenaires.html"><span data-i18n="nav.partners">Partenaires</span></a></li>
-                            <li><a href="carrieres.html">Carrières</a></li>
+                            <li><a href="carrieres.html"><span data-i18n="nav.careers">Carrières</span></a></li>
                             <li><a href="galerie.html"><span data-i18n="nav.gallery">Galerie</span></a></li>
                         <li><a href="conformite.html"><span data-i18n="nav.compliance">Conformité</span></a></li>
                         </ul>
@@ -127,10 +163,14 @@
     </header>
 
     <!-- Page Header -->
-    <section class="page-header">
-        <div class="container text-center">
-            <h1 data-i18n="gallery.title">Galerie Média</h1>
-            <p data-i18n="gallery.subtitle">Immersion visuelle dans nos missions et succès</p>
+    <section class="page-header executive-header">
+        <div class="hero-bg" style="background-image: url('images/centre-financier.jpg');">
+            <div class="hero-overlay-refined"></div>
+        </div>
+        <div class="container text-center relative z-10">
+            <span class="premium-label" data-animate="fade-up" data-i18n="gallery.label">Missions & Succès</span>
+            <h1 data-animate="clip-reveal" data-i18n="gallery.title">Galerie Média</h1>
+            <p data-animate="fade-up" data-delay="2" data-i18n="gallery.subtitle">Immersion visuelle dans nos missions et succès</p>
             <div class="breadcrumb">
                 <a href="index.html" data-i18n="ui.breadcrumb.home">Accueil</a>
                 <span>/</span>
@@ -155,7 +195,10 @@
                 <!-- Item 1: Conférence -->
                 <div class="gallery-item conf">
                     <div class="gallery-inner">
-                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Conférence KGL" loading="lazy" decoding="async">
+                        <picture>
+                            <source type="image/webp" srcset="images/centre-financier-640.webp 640w, images/centre-financier.webp 1024w" sizes="(max-width: 768px) 92vw, 600px">
+                            <img src="images/centre-financier.jpg" alt="Conférence KGL" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 768px) 92vw, 600px" srcset="images/centre-financier-640.webp 640w, images/centre-financier.jpg 1024w">
+                        </picture>
                         <div class="gallery-overlay">
                             <span data-i18n="gallery.item1.title">Conférence Stratégique</span>
                         </div>
@@ -164,7 +207,10 @@
                 <!-- Item 2: Formation -->
                 <div class="gallery-item form">
                     <div class="gallery-inner">
-                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80" alt="Formation KGL" loading="lazy" decoding="async">
+                        <picture>
+                            <source type="image/webp" srcset="images/formation-gestion-640.webp 640w, images/formation-gestion.webp 1024w" sizes="(max-width: 768px) 92vw, 600px">
+                            <img src="images/formation-gestion.jpg" alt="Formation KGL" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 768px) 92vw, 600px" srcset="images/formation-gestion-640.webp 640w, images/formation-gestion.jpg 1024w">
+                        </picture>
                         <div class="gallery-overlay">
                             <span data-i18n="gallery.item2.title">Formation Management</span>
                         </div>
@@ -173,7 +219,10 @@
                 <!-- Item 3: Mission -->
                 <div class="gallery-item miss">
                     <div class="gallery-inner">
-                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Mission Terrain KGL" loading="lazy" decoding="async">
+                        <picture>
+                            <source type="image/webp" srcset="images/audit-controle-640.webp 640w, images/audit-controle.webp 1024w" sizes="(max-width: 768px) 92vw, 600px">
+                            <img src="images/audit-controle.jpg" alt="Mission Terrain KGL" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 768px) 92vw, 600px" srcset="images/audit-controle-640.webp 640w, images/audit-controle.jpg 1024w">
+                        </picture>
                         <div class="gallery-overlay">
                             <span data-i18n="gallery.item3.title">Mission d'Audit Terrain</span>
                         </div>
@@ -182,7 +231,10 @@
                 <!-- Item 4: Séminaire -->
                 <div class="gallery-item sem">
                     <div class="gallery-inner">
-                        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=600&q=80" alt="Séminaire KGL" loading="lazy" decoding="async">
+                        <picture>
+                            <source type="image/webp" srcset="images/diagnostic-institutionnel-640.webp 640w, images/diagnostic-institutionnel.webp 1024w" sizes="(max-width: 768px) 92vw, 600px">
+                            <img src="images/diagnostic-institutionnel.jpg" alt="Séminaire KGL" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 768px) 92vw, 600px" srcset="images/diagnostic-institutionnel-640.webp 640w, images/diagnostic-institutionnel.jpg 1024w">
+                        </picture>
                         <div class="gallery-overlay">
                             <span data-i18n="gallery.item4.title">Séminaire Annuel</span>
                         </div>
@@ -192,55 +244,105 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center mb-12">
-            <div class="footer-pre-content">
-                <h2 class="gradient-text">Prêt à transformer votre performance ?</h2>
-                <p>Rejoignez les leaders qui font confiance à KGL Management pour leur excellence stratégique.</p>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-gradient"></div>
+            <div class="cta-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-animate="fade-up">
+                <h2 data-i18n="gallery.cta.title">Un projet à valoriser ?</h2>
+                <p data-i18n="gallery.cta.desc">Confiez-nous vos missions de conseil, formation et audit en RDC.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large magnetic-btn">
+                        <span data-i18n="gallery.cta.btn1">Prendre rendez-vous</span>
+                        <i class="fas fa-calendar-check"></i>
+                    </a>
+                    <a href="https://wa.me/243812430023" class="btn btn-outline btn-large magnetic-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="gallery.cta.btn2">WhatsApp direct</span>
+                    </a>
+                </div>
             </div>
         </div>
+    </section>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta-content">
+            <span data-i18n="sticky.text">Discutons de votre projet</span>
+            <a href="https://wa.me/243812430023" class="sticky-cta-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span data-i18n="ui.contact">Contacter</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col footer-brand">
                     <a href="index.html" class="footer-logo">
                         <img src="images/logo-kgl.jpg" alt="KGL Management" decoding="async" width="236" height="126" loading="lazy">
                     </a>
-                    <p class="footer-description">Cabinet National de conseil spécialisé en management, gouvernance et performance des organisations en RDC.</p>
+                    <p class="footer-description">Cabinet National de conseil spécialisé en management, gouvernance, finance, audit, conformité et développement des entreprises.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://wa.me/243812430023" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4 data-i18n="footer.expertise">Expertise</h4>
+                    <h4>Navigation</h4>
                     <ul>
-                        <li><a href="services.html"><span data-i18n="footer.services">Services</span></a></li>
-                        <li><a href="secteurs.html"><span data-i18n="footer.sectors">Secteurs</span></a></li>
-                        <li><a href="formations.html"><span data-i18n="nav.training">Formations</span></a></li>
-                        <li><a href="etudes-de-cas.html">Études de Cas</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 data-i18n="footer.resourcesTitle">Ressources</h4>
-                    <ul>
-                        <li><a href="blog.html">Actualités</a></li>
-                        <li><a href="ressources.html">Bibliothèque</a></li>
-                        <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
-                        <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
-                        <li><a href="galerie.html"><span data-i18n="nav.gallery">Galerie</span></a></li>
-                        <li><a href="conformite.html"><span data-i18n="nav.compliance">Conformité</span></a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Société</h4>
-                    <ul>
+                        <li><a href="index.html"><span data-i18n="nav.home">Accueil</span></a></li>
                         <li><a href="apropos.html">À Propos</a></li>
                         <li><a href="ceo.html"><span data-i18n="nav.ceo">Le CEO</span></a></li>
-                        <li><a href="carrieres.html">Carrières</a></li>
-                        <li><a href="partenaires.html"><span data-i18n="nav.partners">Partenaires</span></a></li>
+                        <li><a href="services.html"><span data-i18n="footer.services">Services</span></a></li>
+                        <li><a href="projets.html">Réalisations</a></li>
+                        <li><a href="conformite.html">Conformité</a></li>
+                        <li><a href="contact.html"><span data-i18n="nav.contact">Contact</span></a></li>
                     </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nos services</h4>
+                    <ul>
+                        <li><a href="services.html#management">Management Consulting</a></li>
+                        <li><a href="services.html#business">Business Consulting</a></li>
+                        <li><a href="services.html#finance">Finance & Accounting</a></li>
+                        <li><a href="services.html#audit">Audit & Assurance</a></li>
+                        <li><a href="services.html#risques">Risk & Compliance</a></li>
+                        <li><a href="services.html#formation">Formation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+243812430023">+243 812 430 023</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/243812430023" target="_blank">+243 812 430 023</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Boulevard du Palais de la Nation<br>Gombe, Kinshasa, RDC</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2026 KGL MANAGEMENT, BUSINESS & CONSULTING. Tous droits réservés.</p>
+                </div>
+                <div class="footer-refs">
+                    <span><a href="mentions-legales.html#confidentialite">Politique de confidentialité</a></span>
+                    <span><a href="mentions-legales.html#conditions">Conditions d'utilisation</a></span>
                 </div>
             </div>
         </div>

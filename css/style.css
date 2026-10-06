@@ -5089,6 +5089,15 @@ form.is-submitting .magnetic-btn {
     transition: all var(--transition-base);
 }
 
+.gallery-filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-12);
+    flex-wrap: wrap;
+}
+
 .filter-btn:hover,
 .filter-btn.active {
     background: var(--accent-gold);
