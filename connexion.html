@@ -68,14 +68,14 @@
             <h1 data-i18n="login.title">Bienvenue</h1>
             <p data-i18n="login.desc">Connectez-vous à votre portail sécurisé pour suivre vos missions et accéder à vos rapports.</p>
 
-            <form class="premium-form">
+            <form class="premium-form" id="loginForm" novalidate>
                 <div class="form-group">
                     <label data-i18n="login.email">E-mail professionnel</label>
-                    <input type="email" placeholder="nom@entreprise.com" data-i18n-placeholder="login.emailPlaceholder" required>
+                    <input type="email" name="email" placeholder="nom@entreprise.com" data-i18n-placeholder="login.emailPlaceholder" required>
                 </div>
                 <div class="form-group">
                     <label data-i18n="login.password">Mot de passe</label>
-                    <input type="password" placeholder="••••••••" data-i18n-placeholder="login.passPlaceholder" required>
+                    <input type="password" name="password" placeholder="••••••••" data-i18n-placeholder="login.passPlaceholder" required>
                 </div>
                 <div class="auth-options">
                     <label class="remember-me">
@@ -83,8 +83,23 @@
                     </label>
                     <a href="contact.html" class="forgot-pass" data-i18n="login.forgot">Mot de passe oublié ?</a>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block" data-i18n="login.submit">Se connecter</button>
+                <button type="submit" class="btn btn-primary btn-block submit-btn" data-i18n="login.submit">Se connecter</button>
             </form>
+
+            <!-- État connecté : masqué par défaut, affiché par script.js -->
+            <div id="clientDashboard" class="client-dashboard" hidden>
+                <div class="client-welcome">
+                    <div class="client-avatar" id="clientAvatar">K</div>
+                    <div>
+                        <h2 id="clientName">Bienvenue</h2>
+                        <p id="clientEmail" class="client-email"></p>
+                    </div>
+                </div>
+                <div class="client-actions">
+                    <a href="index.html" class="btn btn-outline-dark btn-sm">Retour au site</a>
+                    <button type="button" class="btn btn-outline-danger btn-sm" id="logoutBtn">Se déconnecter</button>
+                </div>
+            </div>
 
             <div class="auth-footer">
                 <p><span data-i18n="login.newClient">Nouveau client ?</span> <a href="contact.html" data-i18n="login.requestAccess">Demandez vos accès</a></p>
@@ -94,6 +109,7 @@
 
     <div id="toast-container"></div>
 
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <script src="js/translations.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/script.js"></script>

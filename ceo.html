@@ -180,7 +180,7 @@
             <span class="premium-label" data-animate="fade-up" data-i18n="ceo.label">Leadership Officiel</span>
             <h1 data-animate="clip-reveal" data-i18n="ceo.title">Profil du CEO</h1>
             <p data-animate="fade-up" data-delay="2" data-i18n="ceo.subtitle">Dr. John Kangolo Lunkamba — Expertise & Vision Internationale</p>
-            <div class=" la-breadcrumb">
+            <div class="breadcrumb">
                 <a href="index.html" data-i18n="ui.breadcrumb.home">Accueil</a>
                 <span>/</span>
                 <span data-i18n="ceo.breadcrumb">Le CEO</span>
@@ -192,7 +192,11 @@
             <div class="ceo-profile-grid">
                 <div class="ceo-image" data-animate="fade-right">
                     <div class="ceo-image-frame">
-                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Dr. John Kangolo Lunkamba" class="radius-lg" loading="eager" fetchpriority="high" decoding="async">
+                        <picture>
+                            <source type="image/webp" srcset="images/dr.webp" sizes="(max-width: 768px) 92vw, 520px">
+                            <img src="images/dr.jpg" alt="Dr. John Kangolo Lunkamba — CEO KGL Management" class="radius-lg" width="520" height="523" loading="eager" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80';">
+                        </picture>
+                        <div class="experience-year">20+ Ans d'Expertise</div>
                     </div>
                 </div>
                 <div class="ceo-info" data-animate="fade-left">
@@ -235,11 +239,11 @@
             </div>
             <div class="ceo-biography" data-animate="fade-up">
                 <div class="bio-content">
-                    <p class="lead" data-i18n="ceo.bio.lead"><strong style="color: var(--primary-color)">Dr. John Kangolo Lunkamba</strong> est titulaire d'un Doctorat en Administration des Affaires de Suisse, d'un Master en Management International de l'Université de Poitiers (France) et d'une Licence en Finance et Comptabilité de la Haute École de Commerce de Kinshasa.</p>
+                    <p class="lead" data-i18n="ceo.bio.lead" data-i18n-html="true"><strong style="color: var(--primary-color)">Dr. John Kangolo Lunkamba</strong> est titulaire d'un Doctorat en Administration des Affaires de Suisse, d'un Master en Management International de l'Université de Poitiers (France) et d'une Licence en Finance et Comptabilité de la Haute École de Commerce de Kinshasa.</p>
 
-                    <p data-i18n="ceo.bio.p1">Fort de plus de <strong style="color: var(--primary-color)">20 ans d'expérience</strong>, il a occupé des postes de direction en finance, administration et gouvernance au sein d'organisations internationales, d'institutions publiques et d'entreprises privées en RDC, en Ouganda et en République centrafricaine.</p>
+                    <p data-i18n="ceo.bio.p1" data-i18n-html="true">Fort de plus de <strong style="color: var(--primary-color)">20 ans d'expérience</strong>, il a occupé des postes de direction en finance, administration et gouvernance au sein d'organisations internationales, d'institutions publiques et d'entreprises privées en RDC, en Ouganda et en République centrafricaine.</p>
 
-                    <p data-i18n="ceo.bio.p2"><strong style="color: var(--primary-color)">Professeur Associé</strong> à la Haute École de Commerce de Kinshasa, auteur de plusieurs publications scientifiques et formateur en gestion financière, gouvernance et lutte contre la corruption, il est le fondateur et CEO de <strong style="color: var(--primary-color)">KGL Management, Business & Consulting</strong>, où il accompagne les organisations dans l'amélioration de leur performance, de leur gouvernance et de leur développement durable.</p>
+                    <p data-i18n="ceo.bio.p2" data-i18n-html="true"><strong style="color: var(--primary-color)">Professeur Associé</strong> à la Haute École de Commerce de Kinshasa, auteur de plusieurs publications scientifiques et formateur en gestion financière, gouvernance et lutte contre la corruption, il est le fondateur et CEO de <strong style="color: var(--primary-color)">KGL Management, Business & Consulting</strong>, où il accompagne les organisations dans l'amélioration de leur performance, de leur gouvernance et de leur développement durable.</p>
                 </div>
             </div>
         </div>
