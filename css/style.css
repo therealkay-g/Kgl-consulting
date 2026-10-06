@@ -2575,8 +2575,8 @@ footer {
         background: rgba(10, 31, 71, 0.98);
         backdrop-filter: blur(20px);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: center !important;
+        align-items: center !important;
         gap: var(--space-6);
         opacity: 0;
         visibility: hidden;
@@ -6287,7 +6287,14 @@ header {
         gap: 8px;
     }
 
+    /* Sur mobile les sous-menus sont masques : on evite qu'ils cassent
+       la mise en page du menu plein ecran. */
     .nav-menu .dropdown-menu {
+        display: none;
+    }
+
+    .nav-menu li.has-dropdown.open .dropdown-menu {
+        display: block;
         position: static;
         transform: none;
         opacity: 1;
@@ -6298,10 +6305,6 @@ header {
         backdrop-filter: none;
         max-height: none;
         overflow: visible;
-        padding: var(--space-2) 0;
-    }
-
-    .nav-menu li.has-dropdown.open .dropdown-menu {
         padding: var(--space-2) 0;
     }
 
