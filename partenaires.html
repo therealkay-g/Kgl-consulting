@@ -22,6 +22,7 @@
     <link rel="preload" href="fonts/CooperHewitt-Bold.otf" as="font" type="font/otf" crossorigin>
 <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/esu-inspired.css">
     <meta name="theme-color" content="#17418A">
     <meta name="referrer" content="no-referrer-when-downgrade">
     <!-- Filet de securite : sans JS, #preloader (position:fixed, inset:0) masque
@@ -129,9 +130,6 @@
                         <a href="blog.html"><span data-i18n="nav.insights">Insights</span> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="blog.html"><span data-i18n="nav.blog">Blog & Actualités</span></a></li>
-                            <li><a href="etudes-de-cas.html"><span data-i18n="nav.cases">Études de Cas</span></a></li>
-                            <li><a href="ressources.html"><span data-i18n="nav.resources">Ressources & Guides</span></a></li>
-                            <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
                         <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
                         </ul>
                     </li>
@@ -182,43 +180,32 @@
     <!-- Partners Sections -->
     <section class="section-padding bg-light">
         <div class="container">
-            <div class="section-title" data-animate="fade-up">
-                <span class="section-label" data-i18n="partners.list.label">Ils nous font confiance</span>
-                <h2 data-i18n="partners.list.title">Nos partenaires stratégiques</h2>
-                <p data-animate="fade-up" data-i18n="partners.list.desc">Institutions, universités et entreprises qui partagent notre exigence d'excellence.</p>
-            </div>
+            <div class="esu-sec-red"><h2 data-i18n="partners.list.title">Nos partenaires stratégiques</h2></div>
+            <p style="color:var(--esu-muted);font-size:14px;margin:0 0 14px" data-i18n="partners.list.desc">Institutions, universités et entreprises qui partagent notre exigence d'excellence.</p>
             <div class="partners-types">
                 <!-- 1. Institutions -->
                 <div class="partner-group" data-animate="fade-up">
-                    <h2 class="group-title" data-i18n="partners.group1.title">Institutions & Bailleurs</h2>
-                    <p class="group-desc" data-i18n="partners.group1.desc">Des collaborations institutionnelles au service du développement et de l'entrepreneuriat congolais.</p>
-                    <div class="partners-logos-grid">
-                        <div class="partner-card">
-                            <div class="partner-logo-box">
-                                <img src="images/partenaire-anadec.png" alt="ANADEC — Agence Nationale de Développement de l'Entrepreneuriat Congolais" loading="lazy" decoding="async" width="224" height="224">
-                            </div>
-                            <h3>ANADEC</h3>
+                    <div class="esu-sec-red"><h2 data-i18n="partners.group1.title">Institutions & Bailleurs</h2></div>
+                    <p style="color:var(--esu-muted);font-size:14px;margin:0 0 14px" data-i18n="partners.group1.desc">Des collaborations institutionnelles au service du développement et de l'entrepreneuriat congolais.</p>
+                    <div class="esu-logos cols-4">
+                        <div class="esu-logo-tile">
+                            <img src="images/partenaire-anadec.png" alt="ANADEC">
+                            <span>ANADEC</span>
                             <p data-i18n="partners.card.anadec">Agence Nationale de Développement de l'Entrepreneuriat Congolais — appui à l'entrepreneuriat national.</p>
                         </div>
-                        <div class="partner-card">
-                            <div class="partner-logo-box">
-                                <span class="partner-initials">USAID</span>
-                            </div>
-                            <h3>USAID</h3>
+                        <div class="esu-logo-tile">
+                            <span class="esu-init">USAID</span>
+                            <span>USAID</span>
                             <p data-i18n="partners.card.usaid">Gestion et suivi de subventions internationales selon les standards des bailleurs américains.</p>
                         </div>
-                        <div class="partner-card">
-                            <div class="partner-logo-box">
-                                <span class="partner-initials">FM</span>
-                            </div>
-                            <h3 data-i18n="partners.card.fm.title">Fonds Mondial</h3>
+                        <div class="esu-logo-tile">
+                            <span class="esu-init">FM</span>
+                            <span data-i18n="partners.card.fm.title">Fonds Mondial</span>
                             <p data-i18n="partners.card.fm">Expertise en gestion fiduciaire des financements santé (Fonds Mondial, GAVI).</p>
                         </div>
-                        <div class="partner-card">
-                            <div class="partner-logo-box">
-                                <span class="partner-initials">GAVI</span>
-                            </div>
-                            <h3>GAVI</h3>
+                        <div class="esu-logo-tile">
+                            <span class="esu-init">GAVI</span>
+                            <span>GAVI</span>
                             <p data-i18n="partners.card.gavi">Accompagnement des programmes de vaccination et de renforcement des systèmes de santé.</p>
                         </div>
                     </div>
@@ -226,28 +213,22 @@
 
                 <!-- 2. Universités -->
                 <div class="partner-group" data-animate="fade-up" data-delay="1">
-                    <h2 class="group-title" data-i18n="partners.group2.title">Alliances Académiques</h2>
-                    <p class="group-desc" data-i18n="partners.group2.desc">L'excellence académique au service de la recherche, de la formation et de la rigueur scientifique.</p>
-                    <div class="partners-logos-grid">
-                        <div class="partner-card">
-                            <div class="partner-logo-box">
-                                <img src="images/partenaire-hec-kin.png" alt="HEC-KIN — Haute École de Commerce de Kinshasa" loading="lazy" decoding="async" width="225" height="225">
-                            </div>
-                            <h3>HEC-KIN</h3>
+                    <div class="esu-sec-red"><h2 data-i18n="partners.group2.title">Alliances Académiques</h2></div>
+                    <p style="color:var(--esu-muted);font-size:14px;margin:0 0 14px" data-i18n="partners.group2.desc">L'excellence académique au service de la recherche, de la formation et de la rigueur scientifique.</p>
+                    <div class="esu-logos cols-3">
+                        <div class="esu-logo-tile">
+                            <img src="images/partenaire-hec-kin.png" alt="HEC-KIN">
+                            <span>HEC-KIN</span>
                             <p data-i18n="partners.card.heccin">Haute École de Commerce de Kinshasa — enseignement, recherche et publications scientifiques.</p>
                         </div>
-                        <div class="partner-card">
-                            <div class="partner-logo-box">
-                                <span class="partner-initials">CH</span>
-                            </div>
-                            <h3 data-i18n="partners.card.suisse.title">Suisse</h3>
+                        <div class="esu-logo-tile">
+                            <span class="esu-init">CH</span>
+                            <span data-i18n="partners.card.suisse.title">Suisse</span>
                             <p data-i18n="partners.card.suisse">Doctorat en Administration des Affaires — ancrage académique international du CEO.</p>
                         </div>
-                        <div class="partner-card">
-                            <div class="partner-logo-box">
-                                <span class="partner-initials">UP</span>
-                            </div>
-                            <h3 data-i18n="partners.card.poitiers.title">Université de Poitiers</h3>
+                        <div class="esu-logo-tile">
+                            <span class="esu-init">UP</span>
+                            <span data-i18n="partners.card.poitiers.title">Université de Poitiers</span>
                             <p data-i18n="partners.card.poitiers">Master en Management International — management stratégique à l'international.</p>
                         </div>
                     </div>
@@ -255,28 +236,22 @@
 
                 <!-- 3. ONG & Entreprises -->
                 <div class="partner-group" data-animate="fade-up" data-delay="2">
-                    <h2 class="group-title" data-i18n="partners.group3.title">ONG & Entreprises</h2>
-                    <p class="group-desc" data-i18n="partners.group3.desc">Un accompagnement de proximité pour les organisations de la société civile et le secteur privé.</p>
-                    <div class="partners-logos-grid">
-                        <div class="partner-card">
-                            <div class="partner-logo-box">
-                                <img src="images/partenaire-humanitas.png" alt="HUMANITAS" loading="lazy" decoding="async" width="175" height="132">
-                            </div>
-                            <h3>HUMANITAS</h3>
+                    <div class="esu-sec-red"><h2 data-i18n="partners.group3.title">ONG & Entreprises</h2></div>
+                    <p style="color:var(--esu-muted);font-size:14px;margin:0 0 14px" data-i18n="partners.group3.desc">Un accompagnement de proximité pour les organisations de la société civile et le secteur privé.</p>
+                    <div class="esu-logos cols-3">
+                        <div class="esu-logo-tile">
+                            <img src="images/partenaire-humanitas.png" alt="HUMANITAS">
+                            <span>HUMANITAS</span>
                             <p data-i18n="partners.card.humanitas">Partenaire associatif — gouvernance, gestion de projets et développement communautaire.</p>
                         </div>
-                        <div class="partner-card">
-                            <div class="partner-logo-box">
-                                <i class="fas fa-store partner-icon" aria-hidden="true"></i>
-                            </div>
-                            <h3 data-i18n="partners.item.pme_diverses">PME Diverses</h3>
+                        <div class="esu-logo-tile">
+                            <span class="esu-init"><i class="fas fa-store"></i></span>
+                            <span data-i18n="partners.item.pme_diverses">PME Diverses</span>
                             <p data-i18n="partners.card.pme">Structuration, finance et conformité pour les petites et moyennes entreprises congolaises.</p>
                         </div>
-                        <div class="partner-card">
-                            <div class="partner-logo-box">
-                                <i class="fas fa-building partner-icon" aria-hidden="true"></i>
-                            </div>
-                            <h3 data-i18n="partners.item.grandes_entreprises">Grandes Entreprises</h3>
+                        <div class="esu-logo-tile">
+                            <span class="esu-init"><i class="fas fa-building"></i></span>
+                            <span data-i18n="partners.item.grandes_entreprises">Grandes Entreprises</span>
                             <p data-i18n="partners.card.grandes">Audit institutionnel, gouvernance et performance pour les grands comptes privés et publics.</p>
                         </div>
                     </div>
@@ -381,14 +356,11 @@
                 <div class="copyright">
                     <p>&copy; 2026 KGL MANAGEMENT, BUSINESS & CONSULTING. Tous droits réservés.</p>
                 </div>
-                <div class="footer-refs">
-                    <span><a href="mentions-legales.html#confidentialite">Politique de confidentialité</a></span>
-                    <span><a href="mentions-legales.html#conditions">Conditions d'utilisation</a></span>
-                </div>
             </div>
         </div>
     </footer>
 
+        <script src="js/esu-chrome.js"></script>
         <script src="js/translations.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/script.js"></script>

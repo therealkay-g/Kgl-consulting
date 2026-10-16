@@ -33,6 +33,7 @@
     <link rel="preload" href="fonts/CooperHewitt-Bold.otf" as="font" type="font/otf" crossorigin>
 <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/esu-inspired.css">
     <meta name="theme-color" content="#17418A">
     <meta name="referrer" content="no-referrer-when-downgrade">
     <!-- Filet de securite : sans JS, #preloader (position:fixed, inset:0) masque
@@ -142,9 +143,6 @@
                         <a href="blog.html"><span data-i18n="nav.insights">Insights</span> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="blog.html"><span data-i18n="nav.blog">Blog & Actualités</span></a></li>
-                            <li><a href="etudes-de-cas.html"><span data-i18n="nav.cases">Études de Cas</span></a></li>
-                            <li><a href="ressources.html"><span data-i18n="nav.resources">Ressources & Guides</span></a></li>
-                            <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
                         <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
                         </ul>
                     </li>
@@ -248,55 +246,33 @@
     <!-- Mission Vision Values -->
     <section class="section-padding bg-light">
         <div class="container">
-            <div class="section-title text-center mb-16">
-                <span class="section-label" data-i18n="about.dna.label">Notre ADN Institutionnel</span>
-                <h2 data-i18n="about.dna.title">Vision, Mission & Valeurs</h2>
-                <p data-i18n="about.dna.desc">Les piliers de notre engagement envers l'excellence et l'intégrité.</p>
-            </div>
+            <div class="esu-sec-red"><h2 data-i18n="about.dna.title">Vision, Mission & Valeurs</h2></div>
+            <p style="color:var(--esu-muted);font-size:14px;margin:0 0 14px" data-i18n="about.dna.desc">Les piliers de notre engagement envers l'excellence et l'intégrité.</p>
 
-            <div class="executive-panels-grid">
-                <!-- Vision -->
-                <div class="executive-panel" data-animate="fade-up">
-                    <div class="panel-header">
-                        <i class="fas fa-eye"></i>
+            <div class="esu-detail-grid">
+                <div class="sector-detail-card">
+                    <img class="esu-detail-img" src="images/apropos-vision.jpg" alt="Notre Vision">
+                    <div class="sector-info">
                         <h3 data-i18n="about.vision.title">Notre Vision</h3>
-                    </div>
-                    <div class="panel-body">
-                        <p data-i18n="about.vision.desc">Être le cabinet de référence en Afrique centrale, reconnu pour sa capacité à transformer la
-                            gouvernance des organisations par l'innovation stratégique et l'excellence opérationnelle.
-                        </p>
+                        <p data-i18n="about.vision.desc">Être le cabinet de référence en Afrique centrale, reconnu pour sa capacité à transformer la gouvernance des organisations par l'innovation stratégique et l'excellence opérationnelle.</p>
                     </div>
                 </div>
-
-                <!-- Mission -->
-                <div class="executive-panel" data-animate="fade-up" data-delay="1">
-                    <div class="panel-header">
-                        <i class="fas fa-bullseye"></i>
+                <div class="sector-detail-card">
+                    <img class="esu-detail-img" src="images/apropos-mission.jpg" alt="Notre Mission">
+                    <div class="sector-info">
                         <h3 data-i18n="about.mission.title">Notre Mission</h3>
-                    </div>
-                    <div class="panel-body">
-                        <p data-i18n="about.mission.desc">Accompagner les décideurs publics et privés dans la fiabilisation de leur gestion fiduciaire,
-                            l'optimisation de leurs processus et la sécurisation de leur conformité internationale.</p>
+                        <p data-i18n="about.mission.desc">Accompagner les décideurs publics et privés dans la fiabilisation de leur gestion fiduciaire, l'optimisation de leurs processus et la sécurisation de leur conformité internationale.</p>
                     </div>
                 </div>
-
-                <!-- Valeurs -->
-                <div class="executive-panel" data-animate="fade-up" data-delay="2">
-                    <div class="panel-header">
-                        <i class="fas fa-shield-alt"></i>
+                <div class="sector-detail-card">
+                    <img class="esu-detail-img" src="images/apropos-valeurs.jpg" alt="Nos Valeurs">
+                    <div class="sector-info">
                         <h3 data-i18n="about.values.title">Nos Valeurs</h3>
-                    </div>
-                    <div class="panel-body">
-                        <ul class="luxury-list-small">
-                            <li><i class="fas fa-check"></i> <strong data-i18n="about.values.v1.title">Intégrité</strong> : <span data-i18n="about.values.v1.desc">Nous agissons avec
-                                honnêteté,transparence, indépendance et éthique professionnelle.</span></li>
-                            <li><i class="fas fa-check"></i> <strong data-i18n="about.values.v2.title">Excellence</strong> : <span data-i18n="about.values.v2.desc">Nous recherchons en
-                                permanence la qualité, la rigueur et la satisfaction de nos clients.</span></li>
-                            <li><i class="fas fa-check"></i> <strong data-i18n="about.values.v3.title">Innovation</strong> : <span data-i18n="about.values.v3.desc">Nous développons des
-                                solutions modernes et adaptées aux défis d'un environnement en constante évolution.</span></li>
-                            <li><i class="fas fa-check"></i> <strong data-i18n="about.values.v4.title">Professionnalisme</strong> : <span data-i18n="about.values.v4.desc">Nous mettons à la
-                                disposition de nos clients des experts quiamifiés, engagés et orientés vers les
-                                résultats.</span></li>
+                        <ul class="sector-services">
+                            <li><strong data-i18n="about.values.v1.title">Intégrité</strong> : <span data-i18n="about.values.v1.desc">Nous agissons avec honnêteté,transparence, indépendance et éthique professionnelle.</span></li>
+                            <li><strong data-i18n="about.values.v2.title">Excellence</strong> : <span data-i18n="about.values.v2.desc">Nous recherchons en permanence la qualité, la rigueur et la satisfaction de nos clients.</span></li>
+                            <li><strong data-i18n="about.values.v3.title">Innovation</strong> : <span data-i18n="about.values.v3.desc">Nous développons des solutions modernes et adaptées aux défis d'un environnement en constante évolution.</span></li>
+                            <li><strong data-i18n="about.values.v4.title">Professionnalisme</strong> : <span data-i18n="about.values.v4.desc">Nous mettons à la disposition de nos clients des experts quiamifiés, engagés et orientés vers les résultats.</span></li>
                         </ul>
                     </div>
                 </div>
@@ -307,31 +283,16 @@
     <!-- Leadership Section -->
     <section class="section-padding">
         <div class="container">
-            <div class="section-title" data-animate="fade-up">
-                <span class="section-label" data-i18n="about.team.label">Notre Équipe</span>
-                <h2 data-i18n="about.team.title">Une direction d'experts passionnés</h2>
-            </div>
-            <div class="executive-leadership-panel" data-animate="fade-up">
-                <div class="leader-visual">
-                    <picture>
-                        <source type="image/webp" srcset="images/dr.webp 397w" sizes="(max-width: 768px) 92vw, 520px">
-                        <img src="images/dr.jpg" alt="Dr. John Kangolo Lunkamba" width="397" height="399" loading="lazy" decoding="async" sizes="(max-width: 768px) 92vw, 520px" srcset="images/dr.jpg 397w">
-                    </picture>
-                                        
-                    <div class="experience-year" data-i18n="about.team.exp">20+ Ans d'Expertise</div>
-                </div>
-                <div class="leader-details">
-                    <span class="leadership-label" data-i18n="about.team.role">Managing Partner</span>
-                    <h3 data-i18n="about.team.name">Dr. John Kangolo Lunkamba</h3>
-                    <p class="institution-meta" data-i18n="about.team.degree">Docteur en Administration des Affaires — Suisse</p>
-                    <p class="leader-bio-refined" data-i18n="about.team.bio">Expert international de premier plan, le Dr. Kangolo dirige KGL
-                        Management avec une vision axée sur la transparence institutionnelle et la performance durable
-                        en Afrique Centrale.</p>
-                    <div class="leader-actions-premium">
-                        <a href="ceo.html" class="luxury-btn-outline">
-                            <span data-i18n="ui.viewProfile">Consulter le profil complet</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
+            <div class="esu-sec-red"><h2 data-i18n="about.team.title">Une direction d'experts passionnés</h2><a href="ceo.html" data-i18n="ui.viewProfile">Consulter le profil complet</a></div>
+            <div class="esu-detail-grid">
+                <div class="sector-detail-card">
+                    <img class="esu-detail-img" src="images/dr.jpg" alt="Dr. John Kangolo Lunkamba">
+                    <div class="sector-info">
+                        <span class="esu-pill-teal" data-i18n="about.team.role">Managing Partner</span>
+                        <h3 data-i18n="about.team.name" style="margin-top:8px">Dr. John Kangolo Lunkamba</h3>
+                        <p data-i18n="about.team.degree">Docteur en Administration des Affaires — Suisse</p>
+                        <p data-i18n="about.team.bio">Expert international de premier plan, le Dr. Kangolo dirige KGL Management avec une vision axée sur la transparence institutionnelle et la performance durable en Afrique Centrale.</p>
+                        <p><a class="esu-more-pill" href="ceo.html" data-i18n="ui.viewProfile">Consulter le profil complet</a></p>
                     </div>
                 </div>
             </div>
@@ -341,31 +302,11 @@
     <!-- Partners Section -->
     <section class="partners-section section-padding bg-light">
         <div class="container">
-            <div class="section-title" data-animate="fade-up">
-                <span class="section-label" data-i18n="index.partners.label">Ils nous font confiance</span>
-                <h2 data-i18n="index.partners.title">Nos partenaires stratégiques</h2>
-            </div>
-            <div class="partners-marquee" data-animate="fade-up">
-                <div class="partners-track">
-                    <div class="partner-logo">
-                        <img src="images/partenaire-anadec.png" alt="ANADEC" loading="lazy" decoding="async" width="224" height="224">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="images/partenaire-hec-kin.png" alt="HEC-KIN" loading="lazy" decoding="async" width="225" height="225">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="images/partenaire-humanitas.png" alt="HUMANITAS" loading="lazy" decoding="async" width="175" height="132">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="images/partenaire-anadec.png" alt="ANADEC" loading="lazy" decoding="async" width="224" height="224">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="images/partenaire-hec-kin.png" alt="HEC-KIN" loading="lazy" decoding="async" width="225" height="225">
-                    </div>
-                    <div class="partner-logo">
-                        <img src="images/partenaire-humanitas.png" alt="HUMANITAS" loading="lazy" decoding="async" width="175" height="132">
-                    </div>
-                </div>
+            <div class="esu-sec-red"><h2 data-i18n="index.partners.title">Nos partenaires stratégiques</h2><a href="partenaires.html" data-i18n="esu.partners.join">Devenir partenaire</a></div>
+            <div class="esu-logos cols-3">
+                <div class="esu-logo-tile"><img src="images/partenaire-anadec.png" alt="ANADEC"><span>ANADEC</span></div>
+                <div class="esu-logo-tile"><img src="images/partenaire-hec-kin.png" alt="HEC Kinshasa"><span>HEC-KIN</span></div>
+                <div class="esu-logo-tile"><img src="images/partenaire-humanitas.png" alt="Humanitas"><span>HUMANITAS</span></div>
             </div>
         </div>
     </section>
@@ -485,15 +426,12 @@
                 <div class="copyright">
                     <p data-i18n="footer.copyright">&copy; 2026 KGL MANAGEMENT, BUSINESS & CONSULTING. Tous droits réservés.</p>
                 </div>
-                <div class="footer-refs">
-                    <span><a href="mentions-legales.html#confidentialite" data-i18n="footer.privacy">Politique de confidentialité</a></span>
-                    <span><a href="mentions-legales.html" data-i18n="footer.legal">Conditions d'utilisation</a></span>
-                </div>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
+        <script src="js/esu-chrome.js"></script>
         <script src="js/translations.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/script.js"></script>

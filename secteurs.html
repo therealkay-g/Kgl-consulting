@@ -13,6 +13,7 @@
     <link rel="preload" href="fonts/CooperHewitt-Semibold.otf" as="font" type="font/otf" crossorigin>
     <link rel="preload" href="fonts/CooperHewitt-Bold.otf" as="font" type="font/otf" crossorigin>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/esu-inspired.css">
 <!-- Filet de securite : sans JS, #preloader (position:fixed, inset:0) masque
          tout le site et les elements [data-animate] restent en opacity:0.
          On retire les deux blocages pour que la page reste lisible. -->
@@ -84,9 +85,6 @@
                         <a href="blog.html"><span data-i18n="nav.insights">Insights</span> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="blog.html"><span data-i18n="nav.blog">Blog & Actualités</span></a></li>
-                            <li><a href="etudes-de-cas.html"><span data-i18n="nav.cases">Études de Cas</span></a></li>
-                            <li><a href="ressources.html"><span data-i18n="nav.resources">Ressources & Guides</span></a></li>
-                            <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
                         <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
                         </ul>
                     </li>
@@ -135,12 +133,10 @@
         <!-- Sectors Grid -->
         <section class="sectors-details section-padding bg-light">
             <div class="container">
-                <div class="sectors-detailed-grid">
+                <div class="esu-detail-grid">
                     <!-- Santé -->
                     <div class="sector-detail-card" data-animate="fade-up">
-                        <div class="sector-visual">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
+                        <img class="esu-detail-img" src="images/secteur-sante.jpg" alt="Santé">
                         <div class="sector-info">
                             <h3 data-i18n="secteurs.s1.title">Santé</h3>
                             <p data-i18n="secteurs.s1.desc">Accompagnement des institutions de santé dans l'amélioration de la gouvernance, la gestion financière et l'audit des fonds de bailleurs internationaux (GAVI, Fonds Mondial).</p>
@@ -155,9 +151,7 @@
 
                     <!-- Éducation -->
                     <div class="sector-detail-card" data-animate="fade-up">
-                        <div class="sector-visual">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
+                        <img class="esu-detail-img" src="images/secteur-education.jpg" alt="Éducation">
                         <div class="sector-info">
                             <h3 data-i18n="secteurs.s2.title">Éducation</h3>
                             <p data-i18n="secteurs.s2.desc">Appui aux établissements d'enseignement et aux ministères pour une gestion transparente et une planification stratégique orientée vers l'excellence académique.</p>
@@ -172,9 +166,7 @@
 
                     <!-- Agriculture -->
                     <div class="sector-detail-card" data-animate="fade-up">
-                        <div class="sector-visual">
-                            <i class="fas fa-seedling"></i>
-                        </div>
+                        <img class="esu-detail-img" src="images/secteur-agriculture.jpg" alt="Agriculture">
                         <div class="sector-info">
                             <h3 data-i18n="secteurs.s3.title">Agriculture</h3>
                             <p data-i18n="secteurs.s3.desc">Soutien aux coopératives et agro-industries pour optimiser leur rentabilité et faciliter l'accès aux financements grâce à une gestion robuste.</p>
@@ -189,9 +181,7 @@
 
                     <!-- Mines -->
                     <div class="sector-detail-card" data-animate="fade-up">
-                        <div class="sector-visual">
-                            <i class="fas fa-gem"></i>
-                        </div>
+                        <img class="esu-detail-img" src="images/secteur-mines-energie.jpg" alt="Mines et énergie">
                         <div class="sector-info">
                             <h3 data-i18n="secteurs.s4.title">Mines & Énergie</h3>
                             <p data-i18n="secteurs.s4.desc">Conseil stratégique en conformité, audit et gestion de projets pour les entreprises du secteur extractif, moteur de l'économie congolaise.</p>
@@ -206,9 +196,7 @@
 
                     <!-- Institutions Publiques -->
                     <div class="sector-detail-card" data-animate="fade-up">
-                        <div class="sector-visual">
-                            <i class="fas fa-landmark"></i>
-                        </div>
+                        <img class="esu-detail-img" src="images/secteur-institutions-publiques.jpg" alt="Institutions publiques">
                         <div class="sector-info">
                             <h3 data-i18n="secteurs.s5.title">Institutions Publiques</h3>
                             <p data-i18n="secteurs.s5.desc">Modernisation de la gestion publique par le renforcement des systèmes de contrôle interne et l'amélioration de la performance administrative.</p>
@@ -223,9 +211,7 @@
 
                     <!-- ONG -->
                     <div class="sector-detail-card" data-animate="fade-up">
-                        <div class="sector-visual">
-                            <i class="fas fa-hands-helping"></i>
-                        </div>
+                        <img class="esu-detail-img" src="images/secteur-ong-international.jpg" alt="ONG">
                         <div class="sector-info">
                             <h3 data-i18n="secteurs.s6.title">ONG & Organismes Internationaux</h3>
                             <p data-i18n="secteurs.s6.desc">Expertise reconnue dans l'audit des projets financés par les bailleurs de fonds internationaux, garantissant une utilisation optimale des ressources.</p>
@@ -240,9 +226,7 @@
 
                     <!-- PME / MPME -->
                     <div class="sector-detail-card" data-animate="fade-up">
-                        <div class="sector-visual">
-                            <i class="fas fa-store"></i>
-                        </div>
+                        <img class="esu-detail-img" src="images/secteur-pme-mpme.jpg" alt="PME">
                         <div class="sector-info">
                             <h3 data-i18n="secteurs.s7.title">PME & MPME</h3>
                             <p data-i18n="secteurs.s7.desc">Cœur de métier de KGL, nous transformons les petites structures en champions nationaux par la structuration et l'excellence de gestion.</p>
@@ -257,9 +241,7 @@
 
                     <!-- Immobilier -->
                     <div class="sector-detail-card" data-animate="fade-up">
-                        <div class="sector-visual">
-                            <i class="fas fa-building"></i>
-                        </div>
+                        <img class="esu-detail-img" src="images/secteur-immobilier-btp.jpg" alt="Immobilier">
                         <div class="sector-info">
                             <h3 data-i18n="secteurs.s8.title">Immobilier & Construction</h3>
                             <p data-i18n="secteurs.s8.desc">Audit de projets de construction et conseil financier pour les développeurs immobiliers dans un marché en pleine expansion.</p>
@@ -321,7 +303,7 @@
                         <li><a href="services.html"><span data-i18n="footer.services">Services</span></a></li>
                         <li><a href="secteurs.html"><span data-i18n="footer.sectors">Secteurs</span></a></li>
                         <li><a href="formations.html"><span data-i18n="nav.training">Formations</span></a></li>
-                        <li><a href="etudes-de-cas.html"><span data-i18n="footer.cases">Études de Cas</span></a></li>
+                        <li><a href="projets.html"><span data-i18n="footer.cases">Études de Cas</span></a></li>
                     </ul>
                 </div>
 
@@ -329,8 +311,6 @@
                     <h4 data-i18n="footer.resourcesTitle">Ressources</h4>
                     <ul>
                         <li><a href="blog.html"><span data-i18n="footer.news">Actualités</span></a></li>
-                        <li><a href="ressources.html"><span data-i18n="footer.library">Bibliothèque</span></a></li>
-                        <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
                         <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
                         <li><a href="galerie.html"><span data-i18n="nav.gallery">Galerie</span></a></li>
                         <li><a href="conformite.html"><span data-i18n="nav.compliance">Conformité</span></a></li>
@@ -352,15 +332,11 @@
                 <div class="copyright">
                     <p data-i18n="footer.copyright">&copy; 2026 KGL MANAGEMENT, BUSINESS & CONSULTING. Tous droits réservés.</p>
                 </div>
-                <div class="footer-refs">
-                    <span><a href="mentions-legales.html#confidentialite" data-i18n="footer.privacy">Confidentialité</a></span>
-                    <span><a href="mentions-legales.html" data-i18n="footer.legal">Mentions Légales</a></span>
-                    <span><a href="mentions-legales.html#plan-du-site" data-i18n="footer.sitemap">Plan du site</a></span>
-                </div>
             </div>
         </div>
     </footer>
 
+        <script src="js/esu-chrome.js"></script>
         <script src="js/translations.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/script.js"></script>

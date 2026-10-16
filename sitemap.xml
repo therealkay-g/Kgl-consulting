@@ -65,32 +65,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/blog.html"/>
   </url>
 
-  <url>
-    <loc>https://kglgroup.netlify.app/etudes-de-cas.html</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/etudes-de-cas.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/etudes-de-cas.html"/>
-  </url>
+  <!-- etudes-de-cas.html : page supprimee (redirige vers projets.html) -->
 
-  <url>
-    <loc>https://kglgroup.netlify.app/ressources.html</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/ressources.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/ressources.html"/>
-  </url>
+  <!-- ressources.html : page supprimee (redirige vers blog.html) -->
 
-  <url>
-    <loc>https://kglgroup.netlify.app/faq.html</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/faq.html"/>
-  </url>
+  <!-- faq.html : page supprimee (redirige vers contact.html) -->
 
   <url>
     <loc>https://kglgroup.netlify.app/projets.html</loc>
@@ -146,13 +125,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/contact.html"/>
   </url>
 
-  <url>
-    <loc>https://kglgroup.netlify.app/mentions-legales.html</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://kglgroup.netlify.app/mentions-legales.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kglgroup.netlify.app/mentions-legales.html"/>
-  </url>
+  <!-- mentions-legales.html : page supprimee (redirige vers index.html) -->
+
+  <!-- index-esu.html : doublon supprime (redirige vers index.html) -->
 
 </urlset>

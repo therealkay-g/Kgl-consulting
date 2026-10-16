@@ -29,6 +29,7 @@
     <link rel="preload" href="fonts/CooperHewitt-Bold.otf" as="font" type="font/otf" crossorigin>
 <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/esu-inspired.css">
     <meta name="theme-color" content="#17418A">
     <meta name="referrer" content="no-referrer-when-downgrade">
     <!-- Filet de securite : sans JS, #preloader (position:fixed, inset:0) masque
@@ -136,9 +137,6 @@
                         <a href="blog.html"><span data-i18n="nav.insights">Insights</span> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="blog.html"><span data-i18n="nav.blog">Blog & Actualités</span></a></li>
-                            <li><a href="etudes-de-cas.html"><span data-i18n="nav.cases">Études de Cas</span></a></li>
-                            <li><a href="ressources.html"><span data-i18n="nav.resources">Ressources & Guides</span></a></li>
-                            <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
                         <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
                         </ul>
                     </li>
@@ -190,11 +188,8 @@
     <!-- Services Overview -->
     <section class="section-padding">
         <div class="container">
-            <div class="section-title" data-animate="fade-up">
-                <span class="section-label" data-i18n="services.section.label">Notre Expertise</span>
-                <h2 data-i18n="services.section.title">7 domaines de compétence</h2>
-                <p data-i18n="services.section.desc">De la stratégie à la conformité, nous couvrons l'ensemble des besoins de votre organisation</p>
-            </div>
+            <div class="esu-sec-red"><h2 data-i18n="services.section.title">7 domaines de compétence</h2></div>
+            <p style="color:var(--esu-muted);font-size:14px;margin:0 0 14px" data-i18n="services.section.desc">De la stratégie à la conformité, nous couvrons l'ensemble des besoins de votre organisation</p>
             <div class="fiche-filter-bar" id="ficheFilterBar">
                 <p data-i18n="ui.onlyFiche">Une seule fiche est affichée.</p>
                 <button type="button" class="btn btn-outline" id="showAllFiches">
@@ -202,69 +197,14 @@
                     <i class="fas fa-th"></i>
                 </button>
             </div>
-            <div class="services-grid-large" id="servicesGrid">
-                <!-- A. Management -->
-                <div class="service-card-large" id="management" data-animate="fade-up" style="padding: 0; overflow: hidden;">
-                    <picture>
-                        <source type="image/webp" srcset="images/diagnostic-institutionnel-640.webp 640w, images/diagnostic-institutionnel.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
-                        <img src="images/diagnostic-institutionnel.jpg" alt="1. Diagnostic Institutionnel" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/diagnostic-institutionnel-640.webp 640w, images/diagnostic-institutionnel.jpg 1024w" style="width: 100%; height: auto; display: block; border-radius: var(--radius-xl);">
-                    </picture>
-                                        
-                </div>
-
-                <!-- B. Gouvernance & Performance MPMEs -->
-                <div class="service-card-large" id="gouvernance" data-animate="fade-up" data-delay="1" style="padding: 0; overflow: hidden;">
-                    <picture>
-                        <source type="image/webp" srcset="images/accompagnement-entreprises-640.webp 640w, images/accompagnement-entreprises.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
-                        <img src="images/accompagnement-entreprises.jpg" alt="2. Accompagnement des Entreprises" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/accompagnement-entreprises-640.webp 640w, images/accompagnement-entreprises.jpg 1024w" style="width: 100%; height: auto; display: block; border-radius: var(--radius-xl);">
-                    </picture>
-                                        
-                </div>
-
-                <!-- C. Finance pour les MPMEs -->
-                <div class="service-card-large" id="finance" data-animate="fade-up" data-delay="2" style="padding: 0; overflow: hidden;">
-                    <picture>
-                        <source type="image/webp" srcset="images/gestion-financiere-640.webp 640w, images/gestion-financiere.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
-                        <img src="images/gestion-financiere.jpg" alt="3. Gestion Financière" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/gestion-financiere-640.webp 640w, images/gestion-financiere.jpg 1024w" style="width: 100%; height: auto; display: block; border-radius: var(--radius-xl);">
-                    </picture>
-                                        
-                </div>
-
-                <!-- D. Audit Institutionnel -->
-                <div class="service-card-large" id="audit" data-animate="fade-up" data-delay="3" style="padding: 0; overflow: hidden;">
-                    <picture>
-                        <source type="image/webp" srcset="images/audit-controle-640.webp 640w, images/audit-controle.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
-                        <img src="images/audit-controle.jpg" alt="4. Audit et Contrôle" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/audit-controle-640.webp 640w, images/audit-controle.jpg 1024w" style="width: 100%; height: auto; display: block; border-radius: var(--radius-xl);">
-                    </picture>
-                                        
-                </div>
-
-                <!-- E. Gestion des Risques & Conformité -->
-                <div class="service-card-large" id="risques" data-animate="fade-up" data-delay="4" style="padding: 0; overflow: hidden;">
-                    <picture>
-                        <source type="image/webp" srcset="images/cartographie-risques-640.webp 640w, images/cartographie-risques.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
-                        <img src="images/cartographie-risques.jpg" alt="5. Cartographie des Risques" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/cartographie-risques-640.webp 640w, images/cartographie-risques.jpg 1024w" style="width: 100%; height: auto; display: block; border-radius: var(--radius-xl);">
-                    </picture>
-                                        
-                </div>
-
-                <!-- F. Développement des Entreprises -->
-                <div class="service-card-large" id="developpement" data-animate="fade-up" data-delay="5" style="padding: 0; overflow: hidden;">
-                    <picture>
-                        <source type="image/webp" srcset="images/creation-startup-640.webp 640w, images/creation-startup.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
-                        <img src="images/creation-startup.jpg" alt="6. Création de Start-up" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/creation-startup-640.webp 640w, images/creation-startup.jpg 1024w" style="width: 100%; height: auto; display: block; border-radius: var(--radius-xl);">
-                    </picture>
-                                        
-                </div>
-
-                <!-- G. Renforcement des Capacités -->
-                <div class="service-card-large" id="formation" data-animate="fade-up" data-delay="6" style="padding: 0; overflow: hidden;">
-                    <picture>
-                        <source type="image/webp" srcset="images/formation-gestion-640.webp 640w, images/formation-gestion.webp 1024w" sizes="(max-width: 1024px) 92vw, 570px">
-                        <img src="images/formation-gestion.jpg" alt="7. Formation en Gestion" width="1024" height="682" loading="lazy" decoding="async" sizes="(max-width: 1024px) 92vw, 570px" srcset="images/formation-gestion-640.webp 640w, images/formation-gestion.jpg 1024w" style="width: 100%; height: auto; display: block; border-radius: var(--radius-xl);">
-                    </picture>
-                                        
-                </div>
+            <div class="services-grid-large esu-svc-grid" id="servicesGrid">
+                <div class="esu-card" id="management"><img src="images/diagnostic-institutionnel.jpg" alt="Management"><div class="esu-card-body"><h3 data-i18n="index.svc.management">Management</h3><p data-i18n="index.svc.management.desc">Diagnostic organisationnel, restructuration, plan stratégique et organisation institutionnelle.</p><a class="esu-more-pill" href="contact.html" data-i18n="esu.svc.ask">Demander ce service</a></div></div>
+                <div class="esu-card" id="gouvernance"><img src="images/accompagnement-entreprises.jpg" alt="Gouvernance"><div class="esu-card-body"><h3 data-i18n="index.svc.governance">Gouvernance &amp; Performance MPMEs</h3><p data-i18n="index.svc.governance.desc">Accompagnement des MPMEs dans l'amélioration de leur gouvernance et performance.</p><a class="esu-more-pill" href="contact.html" data-i18n="esu.svc.ask">Demander ce service</a></div></div>
+                <div class="esu-card" id="finance"><img src="images/gestion-financiere.jpg" alt="Finance"><div class="esu-card-body"><h3 data-i18n="index.svc.finance">Finance pour les MPMEs</h3><p data-i18n="index.svc.finance.desc">Gestion financière, comptabilité, contrôle budgétaire et cash management.</p><a class="esu-more-pill" href="contact.html" data-i18n="esu.svc.ask">Demander ce service</a></div></div>
+                <div class="esu-card" id="audit"><img src="images/audit-controle.jpg" alt="Audit"><div class="esu-card-body"><h3 data-i18n="index.svc.audit">Audit Institutionnel</h3><p data-i18n="index.svc.audit.desc">Audit et contrôle interne, audit opérationnel et diagnostic organisationnel.</p><a class="esu-more-pill" href="contact.html" data-i18n="esu.svc.ask">Demander ce service</a></div></div>
+                <div class="esu-card" id="risques"><img src="images/cartographie-risques.jpg" alt="Risques"><div class="esu-card-body"><h3 data-i18n="index.svc.risk">Gestion des Risques &amp; Conformité</h3><p data-i18n="index.svc.risk.desc">Cartographie des risques, compliance, anti-fraude et due diligence.</p><a class="esu-more-pill" href="contact.html" data-i18n="esu.svc.ask">Demander ce service</a></div></div>
+                <div class="esu-card" id="developpement"><img src="images/creation-startup.jpg" alt="Développement"><div class="esu-card-body"><h3 data-i18n="index.svc.dev">Développement des Entreprises</h3><p data-i18n="index.svc.dev.desc">Création d'entreprise, business plan, étude de faisabilité et levée de fonds.</p><a class="esu-more-pill" href="contact.html" data-i18n="esu.svc.ask">Demander ce service</a></div></div>
+                <div class="esu-card" id="formation"><img src="images/formation-gestion.jpg" alt="Formation"><div class="esu-card-body"><h3 data-i18n="index.svc.training">Renforcement des Capacités</h3><p data-i18n="index.svc.training.desc">Formations en gestion financière, leadership, projets et contrôle interne.</p><a class="esu-more-pill" href="contact.html" data-i18n="esu.svc.ask">Demander ce service</a></div></div>
             </div>
         </div>
     </section>
@@ -387,7 +327,7 @@
                         <li><a href="services.html"><span data-i18n="footer.services">Services</span></a></li>
                         <li><a href="secteurs.html"><span data-i18n="footer.sectors">Secteurs</span></a></li>
                         <li><a href="formations.html"><span data-i18n="nav.training">Formations</span></a></li>
-                        <li><a href="etudes-de-cas.html"><span data-i18n="footer.cases">Études de Cas</span></a></li>
+                        <li><a href="projets.html"><span data-i18n="footer.cases">Études de Cas</span></a></li>
                     </ul>
                 </div>
 
@@ -395,8 +335,6 @@
                     <h4 data-i18n="footer.resourcesTitle">Ressources</h4>
                     <ul>
                         <li><a href="blog.html"><span data-i18n="footer.news">Actualités</span></a></li>
-                        <li><a href="ressources.html"><span data-i18n="footer.library">Bibliothèque</span></a></li>
-                        <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
                         <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
                         <li><a href="galerie.html"><span data-i18n="nav.gallery">Galerie</span></a></li>
                         <li><a href="conformite.html"><span data-i18n="nav.compliance">Conformité</span></a></li>
@@ -418,16 +356,12 @@
                 <div class="copyright">
                     <p data-i18n="footer.copyright">&copy; 2026 KGL MANAGEMENT, BUSINESS & CONSULTING. Tous droits réservés.</p>
                 </div>
-                <div class="footer-refs">
-                    <span><a href="mentions-legales.html#confidentialite" data-i18n="footer.privacy">Confidentialité</a></span>
-                    <span><a href="mentions-legales.html" data-i18n="footer.legal">Mentions Légales</a></span>
-                    <span><a href="mentions-legales.html#plan-du-site" data-i18n="footer.sitemap">Plan du site</a></span>
-                </div>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
+        <script src="js/esu-chrome.js"></script>
         <script src="js/translations.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/script.js"></script>

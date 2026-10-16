@@ -29,6 +29,7 @@
     <link rel="preload" href="fonts/CooperHewitt-Bold.otf" as="font" type="font/otf" crossorigin>
 <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/esu-inspired.css">
     <meta name="theme-color" content="#17418A">
     <meta name="referrer" content="no-referrer-when-downgrade">
     <!-- Filet de securite : sans JS, #preloader (position:fixed, inset:0) masque
@@ -136,9 +137,6 @@
                         <a href="blog.html"><span data-i18n="nav.insights">Insights</span> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="blog.html"><span data-i18n="nav.blog">Blog & Actualités</span></a></li>
-                            <li><a href="etudes-de-cas.html"><span data-i18n="nav.cases">Études de Cas</span></a></li>
-                            <li><a href="ressources.html"><span data-i18n="nav.resources">Ressources & Guides</span></a></li>
-                            <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
                         <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
                         </ul>
                     </li>
@@ -187,63 +185,30 @@
     </section>
 
     <!-- Executive Contact Panels -->
-    <section class="section-padding" style="padding-top: 0; margin-top: -80px;">
+    <section class="section-padding">
         <div class="container">
-            <div class="executive-panels-grid">
-                <!-- Siège Social -->
-                <div class="executive-panel" data-animate="fade-up">
-                    <div class="panel-header">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3 data-i18n="contact.p1.title">Siège Social</h3>
-                    </div>
-                    <div class="panel-body">
-                        <p class="institution" data-i18n="contact.p1.institution">KGL Management Business & Consulting</p>
-                        <address>
-                            <span data-i18n="contact.p1.addr1">Boulevard du Palais de la Nation</span><br>
-                            <span data-i18n="contact.p1.addr2">Gombe, Kinshasa, RDC</span>
-                        </address>
-                        <a href="https://maps.google.com/?q=Boulevard+du+Palais+de+la+Nation+Kinshasa" target="_blank" class="luxury-link">
-                            <span data-i18n="contact.p1.dir">Obtenir l'itinéraire</span> <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Lignes Directes -->
-                <div class="executive-panel" data-animate="fade-up" data-delay="1">
-                    <div class="panel-header">
-                        <i class="fas fa-phone-alt"></i>
-                        <h3 data-i18n="contact.p2.title">Lignes Directes</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="contact-method">
-                            <span data-i18n="contact.p2.standard">Standard Kinshasa</span>
-                            <a href="tel:+243812430023">+243 812 430 023</a>
-                        </div>
-                        <div class="contact-method">
-                            <span data-i18n="contact.p2.assistance">Assistance Priority</span>
-                            <a href="https://wa.me/243812430023" data-i18n="contact.p2.whatsapp">WhatsApp Direct</a>
-                        </div>
-                        <p class="availability" data-i18n="contact.p2.availability">Disponibilité : Lun - Ven | 08h - 18h</p>
-                    </div>
-                </div>
-
-                <!-- Communication -->
-                <div class="executive-panel" data-animate="fade-up" data-delay="2">
-                    <div class="panel-header">
-                        <i class="fas fa-envelope-open-text"></i>
-                        <h3 data-i18n="contact.p3.title">Communication</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="contact-method">
-                            <span data-i18n="contact.p3.email">Email Officiel</span>
-                            <a href="mailto:contact@kglmanagement.com">contact@kglmanagement.com</a>
-                        </div>
-                        <div class="contact-method">
-                            <span data-i18n="nav.client">Espace Client</span>
-                            <a href="connexion.html" data-i18n="contact.p3.portal">Accéder au portail</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="esu-svc-grid cols-3">
+                <div class="esu-card"><div class="esu-card-body" style="text-align:center">
+                    <span class="esu-form-ico"><i class="fas fa-map-marker-alt"></i></span>
+                    <h3 data-i18n="contact.p1.title">Siège Social</h3>
+                    <p><strong data-i18n="contact.p1.institution">KGL Management Business & Consulting</strong><br>
+                        <span data-i18n="contact.p1.addr1">Boulevard du Palais de la Nation</span><br>
+                        <span data-i18n="contact.p1.addr2">Gombe, Kinshasa, RDC</span></p>
+                    <a class="esu-more-pill" href="https://maps.google.com/?q=Boulevard+du+Palais+de+la+Nation+Kinshasa" target="_blank"><span data-i18n="contact.p1.dir">Obtenir l'itinéraire</span></a>
+                </div></div>
+                <div class="esu-card"><div class="esu-card-body" style="text-align:center">
+                    <span class="esu-form-ico"><i class="fas fa-phone-alt"></i></span>
+                    <h3 data-i18n="contact.p2.title">Lignes Directes</h3>
+                    <p><span data-i18n="contact.p2.standard">Standard Kinshasa</span><br><a href="tel:+243812430023"><strong>+243 812 430 023</strong></a><br>
+                        <span data-i18n="contact.p2.assistance">Assistance Priority</span><br><a href="https://wa.me/243812430023" data-i18n="contact.p2.whatsapp">WhatsApp Direct</a></p>
+                    <p class="esu-meta" data-i18n="contact.p2.availability">Disponibilité : Lun - Ven | 08h - 18h</p>
+                </div></div>
+                <div class="esu-card"><div class="esu-card-body" style="text-align:center">
+                    <span class="esu-form-ico"><i class="fas fa-envelope-open-text"></i></span>
+                    <h3 data-i18n="contact.p3.title">Communication</h3>
+                    <p><span data-i18n="contact.p3.email">Email Officiel</span><br><a href="mailto:contact@kglmanagement.com">contact@kglmanagement.com</a><br>
+                        <span data-i18n="nav.client">Espace Client</span><br><a href="connexion.html" data-i18n="contact.p3.portal">Accéder au portail</a></p>
+                </div></div>
             </div>
         </div>
     </section>
@@ -253,11 +218,8 @@
         <div class="container">
             <div class="contact-layout">
                     <div class="contact-form-premium-v2" data-animate="fade-up">
-                        <div class="section-title text-left mb-12">
-                            <span class="section-label" data-i18n="contact.form.label">Écrivez-nous</span>
-                            <h2 data-i18n="contact.form.title">Parlons de votre vision</h2>
-                            <p data-i18n="contact.form.desc">Nos experts stratégiques sont à votre disposition pour transformer vos ambitions en réalités mesurables.</p>
-                        </div>
+                        <div class="esu-sec-red"><h2 data-i18n="contact.form.title">Parlons de votre vision</h2></div>
+                        <p style="color:var(--esu-muted);font-size:14px;margin:0 0 14px" data-i18n="contact.form.desc">Nos experts stratégiques sont à votre disposition pour transformer vos ambitions en réalités mesurables.</p>
 
                         <form id="contactForm" action="https://formspree.io/f/xjkyqazj" method="POST" class="luxury-form" novalidate>
                             <!-- _gotcha = honeypot anti-spam (Formspree) : invisible aux humains, piège les robots -->
@@ -431,15 +393,12 @@
                 <div class="copyright">
                     <p>&copy; 2026 KGL MANAGEMENT, BUSINESS & CONSULTING. Tous droits réservés.</p>
                 </div>
-                <div class="footer-refs">
-                    <span><a href="mentions-legales.html#confidentialite">Politique de confidentialité</a></span>
-                    <span><a href="mentions-legales.html#conditions">Conditions d'utilisation</a></span>
-                </div>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
+        <script src="js/esu-chrome.js"></script>
         <script src="js/translations.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/script.js"></script>

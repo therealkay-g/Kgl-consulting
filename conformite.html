@@ -29,6 +29,7 @@
     <link rel="preload" href="fonts/CooperHewitt-Bold.otf" as="font" type="font/otf" crossorigin>
 <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/esu-inspired.css">
     <meta name="theme-color" content="#17418A">
     <meta name="referrer" content="no-referrer-when-downgrade">
     <!-- Filet de securite : sans JS, #preloader (position:fixed, inset:0) masque
@@ -136,9 +137,6 @@
                         <a href="blog.html"><span data-i18n="nav.insights">Insights</span> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="blog.html"><span data-i18n="nav.blog">Blog & Actualités</span></a></li>
-                            <li><a href="etudes-de-cas.html"><span data-i18n="nav.cases">Études de Cas</span></a></li>
-                            <li><a href="ressources.html"><span data-i18n="nav.resources">Ressources & Guides</span></a></li>
-                            <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
                             <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
                         </ul>
                     </li>
@@ -231,59 +229,44 @@
     <!-- Risk Management Framework -->
     <section class="section-padding bg-light">
         <div class="container">
-            <div class="section-title" data-animate="fade-up">
-                <span class="section-label" data-i18n="compliance.approach.label">Notre Approche</span>
-                <h2 data-i18n="compliance.approach.title">Cadre de gestion des risques</h2>
-            </div>
-            <div class="commitments-grid">
-                <div class="commitment-card" data-animate="fade-up">
-                    <div class="commitment-number">01</div>
-                    <div class="commitment-icon">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
+            <div class="esu-sec-red"><h2 data-i18n="compliance.approach.title">Cadre de gestion des risques</h2></div>
+            <div class="esu-svc-grid cols-3">
+                <div class="esu-card"><div class="esu-card-body" style="text-align:center">
+                    <span class="esu-num-big">01</span>
+                    <span class="esu-form-ico"><i class="fas fa-map-marked-alt"></i></span>
                     <h3 data-i18n="compliance.risk.r1.title">Cartographie des Risques</h3>
                     <p data-i18n="compliance.risk.r1.desc">Identification et évaluation systématique des risques opérationnels, financiers et stratégiques de votre organisation.</p>
-                </div>
-                <div class="commitment-card" data-animate="fade-up" data-delay="1">
-                    <div class="commitment-number">02</div>
-                    <div class="commitment-icon">
-                        <i class="fas fa-clipboard-check"></i>
-                    </div>
+                </div></div>
+                <div class="esu-card"><div class="esu-card-body" style="text-align:center">
+                    <span class="esu-num-big">02</span>
+                    <span class="esu-form-ico"><i class="fas fa-clipboard-check"></i></span>
                     <h3 data-i18n="compliance.risk.r2.title">Contrôle Interne</h3>
                     <p data-i18n="compliance.risk.r2.desc">Mise en place de procédures de contrôle interne efficaces pour sécuriser vos processus et prévenir les anomalies.</p>
-                </div>
-                <div class="commitment-card" data-animate="fade-up" data-delay="2">
-                    <div class="commitment-number">03</div>
-                    <div class="commitment-icon">
-                        <i class="fas fa-balance-scale"></i>
-                    </div>
+                </div></div>
+                <div class="esu-card"><div class="esu-card-body" style="text-align:center">
+                    <span class="esu-num-big">03</span>
+                    <span class="esu-form-ico"><i class="fas fa-balance-scale"></i></span>
                     <h3 data-i18n="compliance.risk.r3.title">Compliance</h3>
                     <p data-i18n="compliance.risk.r3.desc">Assurance de la conformité aux réglementations locales et internationales applicables à votre secteur d'activité.</p>
-                </div>
-                <div class="commitment-card" data-animate="fade-up" data-delay="3">
-                    <div class="commitment-number">04</div>
-                    <div class="commitment-icon">
-                        <i class="fas fa-ban"></i>
-                    </div>
+                </div></div>
+                <div class="esu-card"><div class="esu-card-body" style="text-align:center">
+                    <span class="esu-num-big">04</span>
+                    <span class="esu-form-ico"><i class="fas fa-ban"></i></span>
                     <h3 data-i18n="compliance.risk.r4.title">Anti-Fraude</h3>
                     <p data-i18n="compliance.risk.r4.desc">Prévention, détection et investigation des fraudes pour protéger les actifs et la réputation de votre organisation.</p>
-                </div>
-                <div class="commitment-card" data-animate="fade-up" data-delay="4">
-                    <div class="commitment-number">05</div>
-                    <div class="commitment-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
+                </div></div>
+                <div class="esu-card"><div class="esu-card-body" style="text-align:center">
+                    <span class="esu-num-big">05</span>
+                    <span class="esu-form-ico"><i class="fas fa-search"></i></span>
                     <h3 data-i18n="compliance.risk.r5.title">Due Diligence</h3>
                     <p data-i18n="compliance.risk.r5.desc">Investigations approfondies pour évaluer les risques avant toute transaction ou partenariat stratégique.</p>
-                </div>
-                <div class="commitment-card" data-animate="fade-up" data-delay="5">
-                    <div class="commitment-number">06</div>
-                    <div class="commitment-icon">
-                        <i class="fas fa-user-secret"></i>
-                    </div>
+                </div></div>
+                <div class="esu-card"><div class="esu-card-body" style="text-align:center">
+                    <span class="esu-num-big">06</span>
+                    <span class="esu-form-ico"><i class="fas fa-user-secret"></i></span>
                     <h3 data-i18n="compliance.risk.r6.title">Investigations</h3>
                     <p data-i18n="compliance.risk.r6.desc">Enquêtes professionnelles et analyses factuelles pour résoudre les problématiques sensibles.</p>
-                </div>
+                </div></div>
             </div>
         </div>
     </section>
@@ -384,15 +367,12 @@
                 <div class="copyright">
                     <p>&copy; 2026 KGL MANAGEMENT, BUSINESS & CONSULTING. Tous droits réservés.</p>
                 </div>
-                <div class="footer-refs">
-                    <span><a href="mentions-legales.html#confidentialite">Politique de confidentialité</a></span>
-                    <span><a href="mentions-legales.html#conditions">Conditions d'utilisation</a></span>
-                </div>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
+        <script src="js/esu-chrome.js"></script>
         <script src="js/translations.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/script.js"></script>

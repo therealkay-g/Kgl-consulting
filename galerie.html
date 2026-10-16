@@ -22,6 +22,7 @@
     <link rel="preload" href="fonts/CooperHewitt-Bold.otf" as="font" type="font/otf" crossorigin>
 <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/esu-inspired.css">
     <meta name="theme-color" content="#17418A">
     <meta name="referrer" content="no-referrer-when-downgrade">
     <!-- Filet de securite : sans JS, #preloader (position:fixed, inset:0) masque
@@ -129,9 +130,6 @@
                         <a href="blog.html"><span data-i18n="nav.insights">Insights</span> <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="blog.html"><span data-i18n="nav.blog">Blog & Actualités</span></a></li>
-                            <li><a href="etudes-de-cas.html"><span data-i18n="nav.cases">Études de Cas</span></a></li>
-                            <li><a href="ressources.html"><span data-i18n="nav.resources">Ressources & Guides</span></a></li>
-                            <li><a href="faq.html"><span data-i18n="nav.faq">FAQ</span></a></li>
                         <li><a href="projets.html"><span data-i18n="nav.projects">Réalisations</span></a></li>
                         </ul>
                     </li>
@@ -182,6 +180,7 @@
     <!-- Gallery Section -->
     <section class="section-padding bg-light">
         <div class="container">
+            <div class="esu-sec-red"><h2 data-i18n="gallery.title">Galerie Média</h2></div>
             <div class="gallery-filters" data-animate="fade-up">
                 <button class="filter-btn active" data-filter="*" data-i18n="gallery.filter.all">Tout</button>
                 <button class="filter-btn" data-filter=".conf" data-i18n="gallery.filter.conf">Conférences</button>
@@ -238,6 +237,42 @@
                         <div class="gallery-overlay">
                             <span data-i18n="gallery.item4.title">Séminaire Annuel</span>
                         </div>
+                    </div>
+                </div>
+                <div class="gallery-item conf">
+                    <div class="gallery-inner">
+                        <img src="images/slide-1.jpg" alt="Sensibilisation financière" loading="lazy">
+                        <div class="gallery-overlay"><span data-i18n="esu.slide1.t">Sensibilisation à l’éducation financière</span></div>
+                    </div>
+                </div>
+                <div class="gallery-item miss">
+                    <div class="gallery-inner">
+                        <img src="images/slide-2.jpg" alt="CEO KGL" loading="lazy">
+                        <div class="gallery-overlay"><span data-i18n="esu.slide2.t">Dr. John Kangolo Lunkamba, CEO</span></div>
+                    </div>
+                </div>
+                <div class="gallery-item form">
+                    <div class="gallery-inner">
+                        <img src="images/slide-3.jpg" alt="Formation Lubumbashi" loading="lazy">
+                        <div class="gallery-overlay"><span data-i18n="esu.slide3.t">Formation des formateurs — Lubumbashi</span></div>
+                    </div>
+                </div>
+                <div class="gallery-item form">
+                    <div class="gallery-inner">
+                        <img src="images/slide-4.jpg" alt="Session FED" loading="lazy">
+                        <div class="gallery-overlay"><span data-i18n="esu.slide4.t">Session de formation FED</span></div>
+                    </div>
+                </div>
+                <div class="gallery-item miss">
+                    <div class="gallery-inner">
+                        <img src="images/a-la-une.jpg" alt="Accompagnement terrain" loading="lazy">
+                        <div class="gallery-overlay"><span data-i18n="gallery.item3.title">Mission d'Audit Terrain</span></div>
+                    </div>
+                </div>
+                <div class="gallery-item form">
+                    <div class="gallery-inner">
+                        <img src="images/organe-formation.jpg" alt="Formation" loading="lazy">
+                        <div class="gallery-overlay"><span data-i18n="gallery.item2.title">Formation Management</span></div>
                     </div>
                 </div>
             </div>
@@ -340,14 +375,11 @@
                 <div class="copyright">
                     <p>&copy; 2026 KGL MANAGEMENT, BUSINESS & CONSULTING. Tous droits réservés.</p>
                 </div>
-                <div class="footer-refs">
-                    <span><a href="mentions-legales.html#confidentialite">Politique de confidentialité</a></span>
-                    <span><a href="mentions-legales.html#conditions">Conditions d'utilisation</a></span>
-                </div>
             </div>
         </div>
     </footer>
 
+        <script src="js/esu-chrome.js"></script>
         <script src="js/translations.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/script.js"></script>
