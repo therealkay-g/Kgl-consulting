@@ -229,12 +229,12 @@ body.esu img{max-width:100%;display:block}
 }
 
 /* Logos partenaires façon portail */
-.esu-justify{text-align:justify;font-size:14px;color:var(--esu-text);margin:0 0 12px}
+.esu-justify{text-align:justify;font-size:14px;color:var(--esu-text);margin:0 0 12px;max-width:100%!important;width:100%}
 .esu-logos{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:6px}
 .esu-logo-tile{background:#fff;border:1px solid var(--esu-border);border-radius:12px;padding:14px 8px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px;justify-content:center;min-height:132px}
-.esu-logo-tile img{height:60px;width:auto;max-width:100%;object-fit:contain}
-.esu-logo-tile span{font-size:12.5px;font-weight:700;color:var(--esu-navy)}
-.esu-init{display:inline-flex;align-items:center;justify-content:center;min-width:66px;height:44px;padding:0 12px;background:var(--esu-navy);color:#fff;font-weight:800;font-size:15px;border-radius:8px}
+.esu-logo-tile img{height:64px;width:auto;max-width:90%;object-fit:contain}
+.esu-logo-tile span{font-size:12.5px;font-weight:800;color:var(--esu-navy);text-transform:uppercase;letter-spacing:.4px}
+.esu-init{display:inline-flex;align-items:center;justify-content:center;min-width:84px;height:52px;padding:0 14px;background:linear-gradient(135deg,#f7d117,#e8b90c);color:var(--esu-navy);font-weight:800;font-size:16px;border-radius:10px;box-shadow:inset 0 0 0 2px rgba(10,36,99,.15)}
 .esu-init i{font-size:20px}
 @media(max-width:960px){
   .esu-logos{grid-template-columns:repeat(3,1fr)}

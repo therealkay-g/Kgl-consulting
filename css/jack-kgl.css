@@ -1,0 +1,6 @@
+/* KGL — Couche animation seule (reveal au scroll, style Jack, code original) */
+.jk-reveal{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.25,.1,.25,1),transform .7s cubic-bezier(.25,.1,.25,1);will-change:opacity,transform}
+.jk-reveal.jk-visible{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .jk-reveal{opacity:1;transform:none;transition:none}
+}
