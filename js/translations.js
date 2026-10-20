@@ -117,7 +117,7 @@ window.KGL_I18N = {
     'index.svc.management.desc': { fr: 'Diagnostic organisationnel, restructuration, business process reengineering, plan stratégique et organisation institutionnelle.', en: 'Organizational diagnostics, restructuring, business process reengineering, strategic planning and institutional organization.' },
     'index.svc.governance': { fr: 'Gouvernance & Performance MPMEs', en: 'Governance & SME Performance' },
     'index.svc.governance.desc': { fr: "Accompagnement des micros, petites et moyennes entreprises dans l'amélioration de leur gouvernance et performance.", en: 'Supporting micro, small and medium enterprises in improving their governance and performance.' },
-    'index.svc.finance': { fr: 'Finance pour les MPMEs', en: 'Finance for SMEs' },
+    'index.svc.finance': { fr: 'Finance, RH et support PME', en: 'Finance, HR and SME Support' },
     'index.svc.finance.desc': { fr: 'Gestion financière, comptabilité, contrôle budgétaire, analyse financière et cash management.', en: 'Financial management, accounting, budget control, financial analysis and cash management.' },
     'index.svc.audit': { fr: 'Audit Institutionnel', en: 'Institutional Audit' },
     'index.svc.audit.desc': { fr: 'Audit et contrôle interne, audit opérationnel et diagnostic organisationnel pour garantir la conformité.', en: 'Internal audit and control, operational audit and organizational diagnostics to ensure compliance.' },
