@@ -27,7 +27,7 @@
           '<img src="images/logo-kgl.jpg" alt="KGL Management" class="esu-flogo">' +
           '<div class="esu-fname">KGL Management,<br>Business &amp; Consulting</div></div>' +
         '<div><h4 data-i18n="esu.footer.address">' + label('esu.footer.address', 'Adresse') + '</h4>' +
-          '<p>Cabinet :<br>Boulevard du Palais de la Nation, Gombe<br>B.P. Kinshasa, RDC</p></div>' +
+          '<p>Cabinet :<br>Avenue Kanda-Kanda 32, Commune de Kasavubu<br>Kinshasa, RDC</p></div>' +
         '<div><h4 data-i18n="esu.footer.contactT">' + label('esu.footer.contactT', 'Contact') + '</h4>' +
           '<p><a href="mailto:contact@kglgroup.netlify.app">contact@kglgroup.netlify.app</a><br><a href="https://wa.me/243812430023">+243 812 430 023</a><br><a href="contact.html">Conciergerie / Devis</a></p></div>' +
         '<div><h4 data-i18n="esu.footer.links">' + label('esu.footer.links', 'Autres liens') + '</h4>' +
